@@ -44,20 +44,22 @@ const MoveEntry = ({ idx, entry, onClick, active }) => (
   </td>
 )
 
+let currentInterval = null
 function animateScroll(container, offset, maxHeight) {
+  if (currentInterval) clearInterval(currentInterval)
   const base = container.scrollTop
   const height = offset - base
   const duration = height / maxHeight * 800
-  const interval = duration / 30
+  const interval = duration / 10
   const step = Math.PI / ( duration / interval )
 
   let count = 0
-  let scrollInterval = setInterval(() => {
+  currentInterval = setInterval(() => {
     if (count < duration / interval) {
         count += 1
         let diff = height * (1 - Math.cos(count * step)) / 2
         container.scrollTop = base + diff
-    } else clearInterval(scrollInterval);
+    } else clearInterval(currentInterval);
   }, interval);
 }
 
