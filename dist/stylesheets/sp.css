@@ -1,0 +1,137 @@
+@media screen and (max-width: 640px) {
+  .board-wrapper {
+    width: 100vw;
+    height: 91.49127vw;
+    background-color: whitesmoke;
+    z-index: 1; }
+  .board {
+    width: 100vw;
+    height: 91.49127vw;
+    position: absolute; }
+  .controller {
+    width: 100vw;
+    height: 91.49127vw;
+    position: absolute; }
+    .controller .control-area {
+      width: 50%;
+      height: 100%;
+      float: left; }
+  .hand-outer {
+    width: 8.68786vw;
+    height: 100%;
+    float: left;
+    position: relative; }
+  .hand {
+    width: 8.68786vw;
+    height: 64.89028vw;
+    background: url("../img/ban_dark.png");
+    background-repeat: no-repeat;
+    position: absolute; }
+    .hand.black {
+      bottom: 0; }
+    .hand.white {
+      top: 0; }
+  .hand-cell {
+    width: 8.28482vw;
+    height: 9.27004vw;
+    position: relative; }
+    .hand-cell .count {
+      position: absolute;
+      top: 0;
+      right: 0.5178vw;
+      color: white;
+      font-size: 3.86252vw;
+      text-shadow: .5px .5px black, .5px -.5px black, -.5px .5px black, -.5px -.5px black; }
+      .hand-cell .count.hidden {
+        display: none; }
+  .main-board {
+    width: 82.62427vw;
+    height: 91.49127vw;
+    background: url("../img/masu_dot_xy.png"), url("../img/ban_kaya_a.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 2.21675vw;
+    float: left; }
+  .cell {
+    width: 8.28482vw;
+    height: 9.27004vw;
+    margin: 0.20152vw;
+    padding: 0;
+    float: left; }
+    .cell.highlight {
+      background-color: rgba(255, 255, 255, 0.7); }
+    .cell.K {
+      background-image: url("../img/koma/Sou.png"); }
+    .cell.R {
+      background-image: url("../img/koma/Shi.png"); }
+    .cell.B {
+      background-image: url("../img/koma/Skaku.png"); }
+    .cell.G {
+      background-image: url("../img/koma/Skin.png"); }
+    .cell.S {
+      background-image: url("../img/koma/Sgin.png"); }
+    .cell.N {
+      background-image: url("../img/koma/Skei.png"); }
+    .cell.L {
+      background-image: url("../img/koma/Skyo.png"); }
+    .cell.P {
+      background-image: url("../img/koma/Sfu.png"); }
+    .cell.pR {
+      background-image: url("../img/koma/Sryu.png"); }
+    .cell.pB {
+      background-image: url("../img/koma/Suma.png"); }
+    .cell.pS {
+      background-image: url("../img/koma/Sngin.png"); }
+    .cell.pN {
+      background-image: url("../img/koma/Snkei.png"); }
+    .cell.pL {
+      background-image: url("../img/koma/Snkyo.png"); }
+    .cell.pP {
+      background-image: url("../img/koma/Sto.png"); }
+    .cell.k {
+      background-image: url("../img/koma/Gou.png"); }
+    .cell.r {
+      background-image: url("../img/koma/Ghi.png"); }
+    .cell.b {
+      background-image: url("../img/koma/Gkaku.png"); }
+    .cell.g {
+      background-image: url("../img/koma/Gkin.png"); }
+    .cell.s {
+      background-image: url("../img/koma/Ggin.png"); }
+    .cell.n {
+      background-image: url("../img/koma/Gkei.png"); }
+    .cell.l {
+      background-image: url("../img/koma/Gkyo.png"); }
+    .cell.p {
+      background-image: url("../img/koma/Gfu.png"); }
+    .cell.pr {
+      background-image: url("../img/koma/Gryu.png"); }
+    .cell.pb {
+      background-image: url("../img/koma/Guma.png"); }
+    .cell.ps {
+      background-image: url("../img/koma/Gngin.png"); }
+    .cell.pn {
+      background-image: url("../img/koma/Gnkei.png"); }
+    .cell.pl {
+      background-image: url("../img/koma/Gnkyo.png"); }
+    .cell.pp {
+      background-image: url("../img/koma/Gto.png"); }
+  span.cell.piece {
+    background-size: 100%; }
+  .board-wrapper {
+    position: absolute; }
+  .kento {
+    width: 100vw;
+    height: 100vh;
+    position: relative; }
+  .move-list-wrapper {
+    padding-top: 91.49127vw;
+    height: 100vh;
+    width: 100vw;
+    position: relative; }
+    .move-list-wrapper .move-list {
+      margin: 30px;
+      width: calc(100% - 60px);
+      height: calc(100% - 60px);
+      overflow: scroll;
+      position: relative; } }

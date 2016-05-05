@@ -1,16 +1,50 @@
+.kento {
+  width: 100vw;
+  height: 100vh;
+  position: relative; }
+
+.move-list-wrapper {
+  padding-top: 91.49127vw;
+  height: 100vh;
+  width: 100vw;
+  position: relative; }
+  .move-list-wrapper .move-list {
+    margin: 30px;
+    width: calc(100% - 60px);
+    height: calc(100% - 60px);
+    overflow: scroll;
+    position: relative; }
+
+.board-wrapper {
+  width: 100vw;
+  height: 91.49127vw;
+  background-color: whitesmoke;
+  position: absolute;
+  z-index: 1; }
+
 .board {
-  width: 370px;
-  height: 338.51769px; }
+  width: 100vw;
+  height: 91.49127vw;
+  position: absolute; }
+
+.controller {
+  width: 100vw;
+  height: 91.49127vw;
+  position: absolute; }
+  .controller .control-area {
+    width: 50%;
+    height: 100%;
+    float: left; }
 
 .hand-outer {
-  width: 32.1451px;
+  width: 8.68786vw;
   height: 100%;
   float: left;
   position: relative; }
 
 .hand {
-  width: 32.1451px;
-  height: 250.53292px;
+  width: 8.68786vw;
+  height: 64.89028vw;
   background: url("../img/ban_dark.png");
   background-repeat: no-repeat;
   position: absolute; }
@@ -20,90 +54,92 @@
     top: 0; }
 
 .hand-cell {
-  width: 32.1451px;
-  height: 35.79042px;
+  width: 8.28482vw;
+  height: 9.27004vw;
   position: relative; }
   .hand-cell .count {
     position: absolute;
     top: 0;
-    right: 2.00907px;
+    right: 0.5178vw;
     color: white;
-    font-size: 14.91267px;
+    font-size: 3.86252vw;
     text-shadow: .5px .5px black, .5px -.5px black, -.5px .5px black, -.5px -.5px black; }
     .hand-cell .count.hidden {
       display: none; }
 
 .main-board {
-  width: 305.70981px;
-  height: 338.51769px;
+  width: 82.62427vw;
+  height: 91.49127vw;
   background: url("../img/masu_dot_xy.png"), url("../img/ban_kaya_a.png");
   background-size: 100%;
   background-repeat: no-repeat;
-  padding: 8.20197px;
+  padding: 2.21675vw;
   float: left; }
 
 .cell {
-  width: 32.1451px;
-  height: 35.79042px;
-  margin: 0;
+  width: 8.28482vw;
+  height: 9.27004vw;
+  margin: 0.20152vw;
   padding: 0;
   float: left; }
+  .cell.highlight {
+    background-color: rgba(255, 255, 255, 0.7); }
   .cell.K {
-    background: url("../img/koma/Sou.png"); }
+    background-image: url("../img/koma/Sou.png"); }
   .cell.R {
-    background: url("../img/koma/Shi.png"); }
+    background-image: url("../img/koma/Shi.png"); }
   .cell.B {
-    background: url("../img/koma/Skaku.png"); }
+    background-image: url("../img/koma/Skaku.png"); }
   .cell.G {
-    background: url("../img/koma/Skin.png"); }
+    background-image: url("../img/koma/Skin.png"); }
   .cell.S {
-    background: url("../img/koma/Sgin.png"); }
+    background-image: url("../img/koma/Sgin.png"); }
   .cell.N {
-    background: url("../img/koma/Skei.png"); }
+    background-image: url("../img/koma/Skei.png"); }
   .cell.L {
-    background: url("../img/koma/Skyo.png"); }
+    background-image: url("../img/koma/Skyo.png"); }
   .cell.P {
-    background: url("../img/koma/Sfu.png"); }
+    background-image: url("../img/koma/Sfu.png"); }
   .cell.pR {
-    background: url("../img/koma/Sryu.png"); }
+    background-image: url("../img/koma/Sryu.png"); }
   .cell.pB {
-    background: url("../img/koma/Suma.png"); }
+    background-image: url("../img/koma/Suma.png"); }
   .cell.pS {
-    background: url("../img/koma/Sngin.png"); }
+    background-image: url("../img/koma/Sngin.png"); }
   .cell.pN {
-    background: url("../img/koma/Snkei.png"); }
+    background-image: url("../img/koma/Snkei.png"); }
   .cell.pL {
-    background: url("../img/koma/Snkyo.png"); }
+    background-image: url("../img/koma/Snkyo.png"); }
   .cell.pP {
-    background: url("../img/koma/Sto.png"); }
+    background-image: url("../img/koma/Sto.png"); }
   .cell.k {
-    background: url("../img/koma/Gou.png"); }
+    background-image: url("../img/koma/Gou.png"); }
   .cell.r {
-    background: url("../img/koma/Ghi.png"); }
+    background-image: url("../img/koma/Ghi.png"); }
   .cell.b {
-    background: url("../img/koma/Gkaku.png"); }
+    background-image: url("../img/koma/Gkaku.png"); }
   .cell.g {
-    background: url("../img/koma/Gkin.png"); }
+    background-image: url("../img/koma/Gkin.png"); }
   .cell.s {
-    background: url("../img/koma/Ggin.png"); }
+    background-image: url("../img/koma/Ggin.png"); }
   .cell.n {
-    background: url("../img/koma/Gkei.png"); }
+    background-image: url("../img/koma/Gkei.png"); }
   .cell.l {
-    background: url("../img/koma/Gkyo.png"); }
+    background-image: url("../img/koma/Gkyo.png"); }
   .cell.p {
-    background: url("../img/koma/Gfu.png"); }
+    background-image: url("../img/koma/Gfu.png"); }
   .cell.pr {
-    background: url("../img/koma/Gryu.png"); }
+    background-image: url("../img/koma/Gryu.png"); }
   .cell.pb {
-    background: url("../img/koma/Guma.png"); }
+    background-image: url("../img/koma/Guma.png"); }
   .cell.ps {
-    background: url("../img/koma/Gngin.png"); }
+    background-image: url("../img/koma/Gngin.png"); }
   .cell.pn {
-    background: url("../img/koma/Gnkei.png"); }
+    background-image: url("../img/koma/Gnkei.png"); }
   .cell.pl {
-    background: url("../img/koma/Gnkyo.png"); }
+    background-image: url("../img/koma/Gnkyo.png"); }
   .cell.pp {
-    background: url("../img/koma/Gto.png"); }
+    background-image: url("../img/koma/Gto.png"); }
 
 span.cell.piece {
   background-size: 100%; }

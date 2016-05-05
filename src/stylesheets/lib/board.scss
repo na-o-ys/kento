@@ -1,0 +1,139 @@
+@function board_height($board_width) {
+  $ratio: $board_width / ((410 - 22) / 9 * 11 + 22);
+  @return 454 * $ratio;
+}
+
+@mixin board($board_width) {
+  $ratio: $board_width / ((410 - 22) / 9 * 11 + 22);
+  $main_board_width: 410 * $ratio;
+  $main_board_height: 454 * $ratio;
+  $main_board_padding: 11 * $ratio;
+  $cell_width: (388 / 9 - 2)  * $ratio;
+  $cell_height: (432 / 9 - 2) * $ratio;
+  $hand_width: $cell_width + $ratio * 2;
+  $hand_height: $cell_height * 7; // P, R, B, L, N, S
+
+  .board-wrapper {
+    width: $board_width;
+    height: $main_board_height;
+    background-color: whitesmoke;
+    z-index: 1;
+  }
+
+  .board {
+    width: $board_width;
+    height: $main_board_height;
+    position: absolute;
+  }
+
+  .controller {
+    width: $board_width;
+    height: $main_board_height;
+    position: absolute;
+
+    .control-area {
+      width: 50%;
+      height: 100%;
+      float: left;
+    }
+  }
+
+  .hand-outer {
+    width: $hand_width;
+    height: 100%;
+    float: left;
+    position: relative;
+  }
+
+  .hand {
+    width: $hand_width;
+    height: $hand_height;
+    background: url('../img/ban_dark.png');
+    background-repeat: no-repeat;
+    position: absolute;
+
+    &.black {
+      bottom: 0;
+    }
+    &.white {
+      top: 0;
+    }
+  }
+
+  .hand-cell {
+    width: $cell_width;
+    height: $cell_height;
+    position: relative;
+
+    .count {
+      position: absolute;
+      top: 0;
+      right: $cell_width / 16;
+      color: white;
+      font-size: $cell_height / 2.4;
+      text-shadow:
+        .5px .5px black,
+        .5px -.5px black,
+        -.5px .5px black,
+        -.5px -.5px black;
+
+      &.hidden {
+        display: none;
+      }
+    }
+  }
+
+  .main-board {
+    width: $main_board_width;
+    height: $main_board_height;
+    background: url('../img/masu_dot_xy.png'), url('../img/ban_kaya_a.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: $main_board_padding;
+    float: left;
+  }
+
+  .cell {
+    width: $cell_width;
+    height: $cell_height;
+    margin: $ratio;
+    padding: 0;
+    float: left;
+
+    &.highlight {
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    &.K { background-image: url('../img/koma/Sou.png'); }
+    &.R { background-image: url('../img/koma/Shi.png'); }
+    &.B { background-image: url('../img/koma/Skaku.png'); }
+    &.G { background-image: url('../img/koma/Skin.png'); }
+    &.S { background-image: url('../img/koma/Sgin.png'); }
+    &.N { background-image: url('../img/koma/Skei.png'); }
+    &.L { background-image: url('../img/koma/Skyo.png'); }
+    &.P { background-image: url('../img/koma/Sfu.png'); }
+    &.pR { background-image: url('../img/koma/Sryu.png'); }
+    &.pB { background-image: url('../img/koma/Suma.png'); }
+    &.pS { background-image: url('../img/koma/Sngin.png'); }
+    &.pN { background-image: url('../img/koma/Snkei.png'); }
+    &.pL { background-image: url('../img/koma/Snkyo.png'); }
+    &.pP { background-image: url('../img/koma/Sto.png'); }
+
+    &.k { background-image: url('../img/koma/Gou.png'); }
+    &.r { background-image: url('../img/koma/Ghi.png'); }
+    &.b { background-image: url('../img/koma/Gkaku.png'); }
+    &.g { background-image: url('../img/koma/Gkin.png'); }
+    &.s { background-image: url('../img/koma/Ggin.png'); }
+    &.n { background-image: url('../img/koma/Gkei.png'); }
+    &.l { background-image: url('../img/koma/Gkyo.png'); }
+    &.p { background-image: url('../img/koma/Gfu.png'); }
+    &.pr { background-image: url('../img/koma/Gryu.png'); }
+    &.pb { background-image: url('../img/koma/Guma.png'); }
+    &.ps { background-image: url('../img/koma/Gngin.png'); }
+    &.pn { background-image: url('../img/koma/Gnkei.png'); }
+    &.pl { background-image: url('../img/koma/Gnkyo.png'); }
+    &.pp { background-image: url('../img/koma/Gto.png'); }
+  }
+
+  span.cell.piece { background-size: 100%; }
+}

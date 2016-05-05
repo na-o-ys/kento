@@ -9,6 +9,10 @@ class Game {
     return new Game(JKFPlayer.parse(text))
   }
 
+  get maxTurn() {
+    return this.player.getMaxTesuu()
+  }
+
   get jpKifu() {
     if (this._jpKifu) return this._jpKifu
     return this._jpKifu = this.player.getReadableKifuState().map(move => (move.kifu))
@@ -17,6 +21,8 @@ class Game {
   getPosition(turn) {
     this.player.goto(turn)
     let state = this.player.getState()
+    let move = this.player.getMove()
+    let movedCell = move ? 9 * (move.to.y - 1) + 9 - move.to.x : -1
     let cells = []
     for (let r = 0; r < 9; r++) for (let f = 0; f < 9; f++) {
       cells.push(boardToCell(state.board[8 - f][r]))
@@ -28,7 +34,7 @@ class Game {
     for (let kind in state.hands[1]) {
       white_hand[pieceKindMap[kind]] = state.hands[1][kind]
     }
-    return { cells, black_hand, white_hand }
+    return { cells, black_hand, white_hand, movedCell }
   }
 }
 

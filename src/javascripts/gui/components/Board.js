@@ -7,7 +7,7 @@ const Board = ({ position }) => (
       <Hand color="white" hands={position.white_hand} />
     </div>
 
-    <MainBoard cells={position.cells} />
+    <MainBoard cells={position.cells} movedCell={position.movedCell} />
 
     <div className="hand-outer">
       <Hand color="black" hands={position.black_hand} />
@@ -15,17 +15,18 @@ const Board = ({ position }) => (
   </div>
 )
 
-const MainBoard = ({ cells }) => (
+const MainBoard = ({ cells, movedCell }) => (
   <div className='main-board'>
     {cells.map((cell, idx) => (
-      <Cell key={idx} piece={cell} />
+      <Cell key={idx} piece={cell} highlight={idx == movedCell}/>
     ))}
   </div>
 )
 
-const Cell = ({ piece }) => {
+const Cell = ({ piece, highlight }) => {
   let classes = ['cell']
   if (piece) classes.push('piece', piece.replace("+", "p"))
+  if (highlight) classes.push('highlight')
   return (
     <span className={classes.join(' ')}></span>
   )

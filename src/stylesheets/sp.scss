@@ -1,0 +1,31 @@
+@import "lib/board";
+
+@media screen and (max-width: 640px) {
+  $board_width: 100vw;
+  @include board($board_width);
+
+  .board-wrapper {
+    position: absolute;
+  }
+
+  .kento {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+  }
+
+  .move-list-wrapper {
+    padding-top: board_height($board_width);
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+
+    .move-list {
+      margin: 30px;
+      width: calc(100% - 60px);
+      height: calc(100% - 60px);
+      overflow: scroll;
+      position: relative;
+    }
+  }
+}

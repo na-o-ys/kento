@@ -114,5 +114,7 @@ let kif = ["開始日時：2016/04/26 09:06:03",
 
 var game = Game.parseText(kif)
 docReady(() => {
-  start(game, 100)
+  let turn = 0
+  if (location.hash) turn = parseInt(location.hash.substr(1))
+  start(game, turn)
 })
