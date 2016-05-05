@@ -1,5 +1,4 @@
 const webpack = require('webpack')
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path')
 
 const project_root = path.resolve("./")
@@ -10,7 +9,7 @@ module.exports = {
   entry: ["babel-polyfill", "./index.js"],
   output: {
     path: project_root + "/dist/javascripts",
-    filename: "./bundle.js"
+    filename: "./kento_client.dev.js"
   },
   resolve: {
     root: [

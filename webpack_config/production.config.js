@@ -1,25 +1,26 @@
-var webpack = require('webpack')
-var path = require('path')
-var AssetsPlugin = require('assets-webpack-plugin')
-var root_path = path.resolve("./")
+const webpack = require('webpack')
+const path = require('path')
+
+const project_root = path.resolve("./")
+const javascripts_root = project_root + "/src/javascripts"
 
 module.exports = {
-  context: root_path + "/app/assets/javascripts/src",
+  context: javascripts_root,
   entry: ["babel-polyfill", "./index.js"],
   output: {
-    path: root_path + "/public/javascripts",
-    filename: "bundle_[chunkhash].js"
+    path: project_root + "/dist/javascripts",
+    filename: "./kento_client.min.js"
   },
   resolve: {
     root: [
-      root_path + "/app/assets/javascripts/src"
+      javascripts_root
     ]
   },
   module: {
     loaders: [
       {
         test: /\.js$/,
-        exclude: /node_modules/,
+        exclude: [/node_modules/, /json-kifu-format/],
         loader: "babel-loader",
         query: {
           presets: ['es2015', 'react']
