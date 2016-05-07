@@ -5,12 +5,12 @@
   "main": "src/js/index.js",
   "scripts": {
     "watch:stylesheets": "node-sass -w src/stylesheets/kento_client.scss -o dist/stylesheets",
-    "watch:javascripts:development": "NODE_ENV=development webpack --watch",
-    "watch:javascripts:production": "NODE_ENV=production webpack -p --watch",
-    "watch": "npm-run-all --parallel watch:* watch:javascripts:*",
+    "watch:javascripts": "NODE_ENV=development webpack --watch",
+    "watch": "npm-run-all --parallel watch:*",
     "clean": "rm -rf dist/stylesheets/* dist/javascripts/bundle.min.js",
     "build:stylesheets": "node-sass src/stylesheets/kento_client.scss -o dist/stylesheets",
-    "build:javascripts": "NODE_ENV=production webpack -p",
+    "build:javascripts_prod": "NODE_ENV=production webpack -p",
+    "build:javascripts_dev": "NODE_ENV=development webpack",
     "build": "npm-run-all clean --parallel build:*",
     "test": "NODE_ENV=test NODE_PATH=app/assets/javascripts/src mocha --compilers js:babel-register $(find app/assets/javascripts/test -name '*.spec.js') --require app/assets/javascripts/test/global.js"
   },

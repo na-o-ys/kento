@@ -8,6 +8,7 @@ function game(state = null, action) {
 function turn(state = 0, action) {
   switch (action.type) {
     case SET_TURN:
+      history.replaceState(null, null, `#${action.turn}`)
       return action.turn
     default:
       return state

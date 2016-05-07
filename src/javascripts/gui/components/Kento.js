@@ -4,7 +4,6 @@ import MoveList from "./MoveList.js"
 import Controller from "./Controller.js"
 
 const Kento = ({ game, turn, control }) => {
-  location.hash = turn
   let position = game.getPosition(turn)
   return (
     <div className="kento">
