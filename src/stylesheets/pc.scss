@@ -16,8 +16,31 @@
     position: relative;
   }
 
+  .info-wrapper {
+    float: left;
+  }
+
+  .game-info {
+    width: 300px;
+    padding: 0 30px 0 30px;
+    margin-bottom: 15px;
+    line-height: 20px;
+    .players {
+      position: relative;
+      overflow: hidden;
+      div {
+        float: left;
+        margin-right: 10px;
+      }
+    }
+    .game {
+      overflow: hidden;
+      position: relative;
+    }
+  }
+
   .move-list-wrapper {
-    height: board_height($board_width);
+    height: calc(#{board_height($board_width)} - 75px);
     width: 300px;
     float: left;
     position: relative;

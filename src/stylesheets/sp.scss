@@ -5,7 +5,7 @@
   @include board($board_width);
 
   .board-wrapper {
-    position: absolute;
+    position: relative;
   }
 
   .kento {
@@ -14,16 +14,35 @@
     position: relative;
   }
 
+  .game-info {
+    margin: 15px 15px 0 15px;
+    line-height: 20px;
+    .players {
+      position: relative;
+      overflow: hidden;
+      div {
+        float: left;
+        margin-right: 10px;
+      }
+    }
+    .game {
+      overflow: hidden;
+      position: relative;
+      div {
+        float: left;
+        margin-right: 10px;
+      }
+    }
+  }
+
   .move-list-wrapper {
-    padding-top: board_height($board_width);
-    height: 100vh;
+    height: calc(100vh - #{board_height($board_width)} - 55px);
     width: 100vw;
+    padding: 15px;
     position: relative;
 
     .move-list {
-      margin: 30px;
-      width: calc(100% - 60px);
-      height: calc(100% - 60px);
+      height: 100%;
       overflow: scroll;
       position: relative;
     }

@@ -20,19 +20,19 @@ class MoveList extends React.Component {
   render() {
     return (
       <div className="move-list-wrapper">
-      <div className="move-list">
-        <table className="table">
-          <tbody>
-            {this.props.game.jpKifu.map((entry, idx) => (
-              <tr key={idx} ref={`kifu-${idx}`}>
-                <MoveEntry idx={idx} entry={entry}
-                  onClick={() => this.props.control.setTurn(idx)}
-                  active={idx == this.props.turn} />
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+        <div className="move-list">
+          <table className="table">
+            <tbody>
+              {this.props.game.jpKifu.map((entry, idx) => (
+                <tr key={idx} ref={`kifu-${idx}`}>
+                  <MoveEntry idx={idx} entry={entry}
+                    onClick={() => this.props.control.setTurn(idx)}
+                    active={idx == this.props.turn} />
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
     )
   }

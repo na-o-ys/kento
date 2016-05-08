@@ -36,6 +36,10 @@ class Game {
     }
     return { cells, black_hand, white_hand, movedCell }
   }
+
+  getHeader() {
+    return this.player.kifu["header"]
+  }
 }
 
 let pieceKindMap = {
