@@ -16,8 +16,8 @@ const Kento = ({ game, turn, control }) => {
       </div>
       <div className="info-wrapper">
         <GameInfo game={game} />
-        <Comment comments={comments} />
         <MoveList game={game} turn={turn} control={control} />
+        <Comment comments={comments} />
       </div>
     </div>
   )
