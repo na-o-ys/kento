@@ -158,6 +158,8 @@
       height: 100%;
       overflow: scroll;
       position: relative; }
+  .move-menu-wrapper {
+    display: none; }
   .comment {
     height: 200px;
     width: 300px;
@@ -328,11 +330,13 @@
       .comment .comment-body p {
         margin: 0; }
   .move-list-wrapper {
+    display: none; }
+  .move-menu-wrapper {
     height: calc(85vh - 91.49127vw - 90px);
     width: 100vw;
     padding: 15px;
     position: relative; }
-    .move-list-wrapper .move-list {
+    .move-menu-wrapper .move-list {
       height: 100%;
       overflow: scroll;
       position: relative; } }

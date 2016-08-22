@@ -54,6 +54,10 @@
   }
 
   .move-list-wrapper {
+    display: none;
+  }
+
+  .move-menu-wrapper {
     height: calc(85vh - #{board_height($board_width)} - 90px);
     width: 100vw;
     padding: 15px;

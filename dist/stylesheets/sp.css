@@ -1,28 +1,28 @@
-@media screen and (min-width: 641px) {
+@media screen and (max-width: 640px) {
   .board-wrapper {
-    width: 500px;
-    height: 457.45634px;
+    width: 100vw;
+    height: 91.49127vw;
     z-index: 1; }
   .board {
-    width: 500px;
-    height: 457.45634px;
+    width: 100vw;
+    height: 91.49127vw;
     position: absolute; }
   .controller {
-    width: 500px;
-    height: 457.45634px;
+    width: 100vw;
+    height: 91.49127vw;
     position: absolute; }
     .controller .control-area {
       width: 50%;
       height: 100%;
       float: left; }
   .hand-outer {
-    width: 43.43932px;
+    width: 8.68786vw;
     height: 100%;
     float: left;
     position: relative; }
   .hand {
-    width: 43.43932px;
-    height: 324.45141px;
+    width: 8.68786vw;
+    height: 64.89028vw;
     background: url("../img/ban_dark.png");
     background-repeat: no-repeat;
     position: absolute; }
@@ -31,30 +31,30 @@
     .hand.white {
       top: 0; }
   .hand-cell {
-    width: 41.42409px;
-    height: 46.3502px;
+    width: 8.28482vw;
+    height: 9.27004vw;
     position: relative; }
     .hand-cell .count {
       position: absolute;
       top: 0;
-      right: 2.58901px;
+      right: 0.5178vw;
       color: white;
-      font-size: 19.31258px;
+      font-size: 3.86252vw;
       text-shadow: .5px .5px black, .5px -.5px black, -.5px .5px black, -.5px -.5px black; }
       .hand-cell .count.hidden {
         display: none; }
   .main-board {
-    width: 413.12136px;
-    height: 457.45634px;
+    width: 82.62427vw;
+    height: 91.49127vw;
     background: url("../img/masu_dot_xy.png"), url("../img/ban_kaya_a.png");
     background-size: 100%;
     background-repeat: no-repeat;
-    padding: 11.08374px;
+    padding: 2.21675vw;
     float: left; }
   .cell {
-    width: 41.42409px;
-    height: 46.3502px;
-    margin: 1.00761px;
+    width: 8.28482vw;
+    height: 9.27004vw;
+    margin: 0.20152vw;
     padding: 0;
     float: left; }
     .cell.highlight {
@@ -117,23 +117,14 @@
       background-image: url("../img/koma/Gto.png"); }
   span.cell.piece {
     background-size: 100%; }
-  body {
-    font-size: 12px; }
   .board-wrapper {
-    position: relative;
-    float: left; }
-  .kento {
-    margin: 30px auto auto auto;
-    width: 800px;
-    height: auto;
     position: relative; }
-  .info-wrapper {
-    width: 300px;
-    float: left; }
+  .kento {
+    width: 100vw;
+    height: 100vh;
+    position: relative; }
   .game-info-wrapper {
-    width: 300px;
-    padding: 0 20px 0 20px;
-    margin-bottom: 15px;
+    margin: 15px 15px 0 15px;
     line-height: 20px; }
     .game-info-wrapper .game-info {
       background-color: whitesmoke;
@@ -147,31 +138,27 @@
     .game-info-wrapper .game {
       overflow: hidden;
       position: relative; }
-  .move-list-wrapper {
-    height: calc(457.45634px - 300px);
-    width: 300px;
-    float: left;
-    position: relative; }
-    .move-list-wrapper .move-list {
-      margin: 0 20px 0 20px;
-      width: calc(100% - 60px);
-      height: 100%;
-      overflow: scroll;
-      position: relative; }
-  .move-menu-wrapper {
-    display: none; }
+      .game-info-wrapper .game div {
+        float: left;
+        margin-right: 10px; }
   .comment {
-    height: 200px;
-    width: 300px;
-    padding: 0 20px 0 20px;
-    margin-top: 15px;
-    line-height: 20px;
-    float: left; }
+    height: 15vh;
+    margin: 15px 15px 0 15px; }
     .comment .comment-body {
       padding: 5px;
       background-color: whitesmoke;
-      position: relative;
       overflow: scroll;
       height: 100%; }
       .comment .comment-body p {
-        margin: 0; } }
+        margin: 0; }
+  .move-list-wrapper {
+    display: none; }
+  .move-menu-wrapper {
+    height: calc(85vh - 91.49127vw - 90px);
+    width: 100vw;
+    padding: 15px;
+    position: relative; }
+    .move-menu-wrapper .move-list {
+      height: 100%;
+      overflow: scroll;
+      position: relative; } }
