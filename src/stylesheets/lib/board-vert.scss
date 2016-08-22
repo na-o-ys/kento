@@ -4,30 +4,32 @@
 }
 
 @mixin board($board_width) {
-  $ratio: $board_width / ((410 - 22) / 9 * 11 + 22);
-  $main_board_width: 410 * $ratio;
+  $ratio: $board_width / 410;
+  $main_board_width: $board_width;
   $main_board_height: 454 * $ratio;
   $main_board_padding: 11 * $ratio;
   $cell_width: (388 / 9 - 2)  * $ratio;
   $cell_height: (432 / 9 - 2) * $ratio;
-  $hand_width: $cell_width + $ratio * 2;
-  $hand_height: $cell_height * 7; // P, R, B, L, N, S
+  $hand_width: $cell_width * 7; // P, R, B, L, N, S
+  $hand_height: $cell_height + $ratio * 2;
+  $board_height: $main_board_height + $hand_height * 2;
 
   .board-wrapper {
     width: $board_width;
-    height: $main_board_height;
+    height: $board_height;
+    background-color: whitesmoke;
     z-index: 1;
   }
 
   .board {
     width: $board_width;
-    height: $main_board_height;
+    height: $board_height;
     position: absolute;
   }
 
   .controller {
     width: $board_width;
-    height: $main_board_height;
+    height: $board_height;
     position: absolute;
 
     .control-area {
@@ -38,9 +40,10 @@
   }
 
   .hand-outer {
-    width: $hand_width;
-    height: 100%;
-    float: left;
+    width: $board_width;
+    height: $hand_height;
+    // height: 100%;
+    // float: left;
     position: relative;
   }
 
@@ -52,10 +55,10 @@
     position: absolute;
 
     &.black {
-      bottom: 0;
+      right: 0;
     }
     &.white {
-      top: 0;
+      left: 0;
     }
   }
 
@@ -63,6 +66,7 @@
     width: $cell_width;
     height: $cell_height;
     position: relative;
+    float: left;
 
     .count {
       position: absolute;
@@ -89,7 +93,6 @@
     background-size: 100%;
     background-repeat: no-repeat;
     padding: $main_board_padding;
-    float: left;
   }
 
   .cell {

@@ -3,7 +3,7 @@ import ReactDOM from "react-dom"
 
 class MoveList extends React.Component {
   scrollToCurrentTurn(animate = false) {
-    let topIdx = Math.max(this.props.turn - 2, 0)
+    let topIdx = Math.max(this.props.turn - 1, 0)
     let offset = ReactDOM.findDOMNode(this.refs[`kifu-${topIdx}`]).offsetTop
     let moveLists = document.getElementsByClassName("move-list")
     Array.forEach(moveLists, list => {

@@ -14,9 +14,13 @@
     position: relative;
   }
 
-  .game-info {
+  .game-info-wrapper {
     margin: 15px 15px 0 15px;
     line-height: 20px;
+    .game-info {
+      background-color: whitesmoke;
+      padding: 5px;
+    }
     .players {
       position: relative;
       overflow: hidden;
@@ -35,8 +39,22 @@
     }
   }
 
+  .comment {
+    height: 15vh;
+    margin: 15px 15px 0 15px;
+    .comment-body {
+      padding: 5px;
+      background-color: whitesmoke;
+      overflow: scroll;
+      height: 100%;
+      p {
+        margin: 0;
+      }
+    }
+  }
+
   .move-list-wrapper {
-    height: calc(100vh - #{board_height($board_width)} - 55px);
+    height: calc(85vh - #{board_height($board_width)} - 90px);
     width: 100vw;
     padding: 15px;
     position: relative;
