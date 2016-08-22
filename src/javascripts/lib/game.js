@@ -6,7 +6,7 @@ class Game {
   }
 
   static parseText(text) {
-    return new Game(JKFPlayer.parse(text))
+    return new Game(JKFPlayer.parseKIF(text))
   }
 
   get maxTurn() {
@@ -35,6 +35,10 @@ class Game {
       white_hand[pieceKindMap[kind]] = state.hands[1][kind]
     }
     return { cells, black_hand, white_hand, movedCell }
+  }
+
+  getComments(turn) {
+    return this.player.getComments(turn)
   }
 
   getHeader() {
