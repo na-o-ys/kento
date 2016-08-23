@@ -9,12 +9,10 @@ class MoveMenu extends React.Component {
     return (
       <div className="move-menu-wrapper">
         <div className="move-menu">
-          <select value={this.props.turn} onChange={this.handleChange} className="table">
-              {this.props.game.jpKifu.map((entry, idx) => (
-                <option key={idx} value={idx}>
-                  {idx}. {entry}
-                </option>
-              ))}
+          <select value={this.props.turn} onChange={this.handleChange.bind(this)} className="form-control">
+            {this.props.game.jpKifu.map((entry, idx) => (
+              <MoveOption key={idx} game={this.props.game} entry={entry} idx={idx} />
+            ))}
           </select>
         </div>
       </div>
@@ -22,23 +20,19 @@ class MoveMenu extends React.Component {
   }
 }
 
-let currentInterval = null
-function animateScroll(container, offset, maxHeight) {
-  if (currentInterval) clearInterval(currentInterval)
-  const base = container.scrollTop
-  const height = offset - base
-  const duration = height / maxHeight * 800
-  const interval = duration / 10
-  const step = Math.PI / ( duration / interval )
-
-  let count = 0
-  currentInterval = setInterval(() => {
-    if (count < duration / interval) {
-        count += 1
-        let diff = height * (1 - Math.cos(count * step)) / 2
-        container.scrollTop = base + diff
-    } else clearInterval(currentInterval);
-  }, interval);
+const MoveOption = ({game, entry, idx}) => {
+  const ljust = n => {
+    const str = n.toString()
+    let fill = []
+    while (fill.length + str.length < 2) fill.push("0")
+    return fill.join() + str
+  }
+  const { now, total } = game.getTime(idx)
+  return (
+    <option value={idx}>
+      {idx}. {entry} ( {now.m} / {total.h}:{ljust(total.m)} )
+    </option>
+  )
 }
 
 export default MoveMenu

@@ -1,17 +1,17 @@
 @function board_height($board_width) {
-  $ratio: $board_width / ((410 - 22) / 9 * 11 + 22);
-  @return 454 * $ratio;
+  $ratio: calc(#{$board_width} / ((410 - 22) / 9 * 11 + 22));
+  @return calc(454 * #{$ratio});
 }
 
 @mixin board($board_width) {
-  $ratio: $board_width / ((410 - 22) / 9 * 11 + 22);
-  $main_board_width: 410 * $ratio;
-  $main_board_height: 454 * $ratio;
-  $main_board_padding: 11 * $ratio;
-  $cell_width: (388 / 9 - 2)  * $ratio;
-  $cell_height: (432 / 9 - 2) * $ratio;
-  $hand_width: $cell_width + $ratio * 2;
-  $hand_height: $cell_height * 7; // P, R, B, L, N, S
+  $ratio:              calc(#{$board_width} / ((410 - 22) / 9 * 11 + 22));
+  $main_board_width:   calc(410 * #{$ratio});
+  $main_board_height:  calc(454 * #{$ratio});
+  $main_board_padding: calc(11 * #{$ratio});
+  $cell_width:         calc((388 / 9 - 2)  * #{$ratio});
+  $cell_height:        calc((432 / 9 - 2) * #{$ratio});
+  $hand_width:         calc(#{$cell_width} + #{$ratio} * 2);
+  $hand_height:        calc(#{$cell_height} * 7); // P, R, B, L, N, S
 
   .board-wrapper {
     width: $board_width;
@@ -67,9 +67,9 @@
     .count {
       position: absolute;
       top: 0;
-      right: $cell_width / 16;
+      right: calc(#{$cell_width} / 16);
       color: white;
-      font-size: $cell_height / 2.4;
+      font-size: calc(#{$cell_height} / 2.4);
       text-shadow:
         .5px .5px black,
         .5px -.5px black,
