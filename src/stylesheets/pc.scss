@@ -62,11 +62,15 @@
     }
   }
 
+  .move-menu-wrapper {
+    display: none;
+  }
+
   .comment {
     height: 200px;
     width: 300px;
     padding: 0 20px 0 20px;
-    margin-bottom: 15px;
+    margin-top: 15px;
     line-height: 20px;
     float: left;
 

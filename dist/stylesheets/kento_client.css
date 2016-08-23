@@ -1,28 +1,28 @@
 @media screen and (min-width: 641px) {
   .board-wrapper {
     width: 500px;
-    height: 457.45634px;
+    height: calc(454 * calc(500px / ((410 - 22) / 9 * 11 + 22)));
     z-index: 1; }
   .board {
     width: 500px;
-    height: 457.45634px;
+    height: calc(454 * calc(500px / ((410 - 22) / 9 * 11 + 22)));
     position: absolute; }
   .controller {
     width: 500px;
-    height: 457.45634px;
+    height: calc(454 * calc(500px / ((410 - 22) / 9 * 11 + 22)));
     position: absolute; }
     .controller .control-area {
       width: 50%;
       height: 100%;
       float: left; }
   .hand-outer {
-    width: 43.43932px;
+    width: calc(calc((388 / 9 - 2)  * calc(500px / ((410 - 22) / 9 * 11 + 22))) + calc(500px / ((410 - 22) / 9 * 11 + 22)) * 2);
     height: 100%;
     float: left;
     position: relative; }
   .hand {
-    width: 43.43932px;
-    height: 324.45141px;
+    width: calc(calc((388 / 9 - 2)  * calc(500px / ((410 - 22) / 9 * 11 + 22))) + calc(500px / ((410 - 22) / 9 * 11 + 22)) * 2);
+    height: calc(calc((432 / 9 - 2) * calc(500px / ((410 - 22) / 9 * 11 + 22))) * 7);
     background: url("../img/ban_dark.png");
     background-repeat: no-repeat;
     position: absolute; }
@@ -31,30 +31,30 @@
     .hand.white {
       top: 0; }
   .hand-cell {
-    width: 41.42409px;
-    height: 46.3502px;
+    width: calc((388 / 9 - 2)  * calc(500px / ((410 - 22) / 9 * 11 + 22)));
+    height: calc((432 / 9 - 2) * calc(500px / ((410 - 22) / 9 * 11 + 22)));
     position: relative; }
     .hand-cell .count {
       position: absolute;
       top: 0;
-      right: 2.58901px;
+      right: calc(calc((388 / 9 - 2)  * calc(500px / ((410 - 22) / 9 * 11 + 22))) / 16);
       color: white;
-      font-size: 19.31258px;
+      font-size: calc(calc((432 / 9 - 2) * calc(500px / ((410 - 22) / 9 * 11 + 22))) / 2.4);
       text-shadow: .5px .5px black, .5px -.5px black, -.5px .5px black, -.5px -.5px black; }
       .hand-cell .count.hidden {
         display: none; }
   .main-board {
-    width: 413.12136px;
-    height: 457.45634px;
+    width: calc(410 * calc(500px / ((410 - 22) / 9 * 11 + 22)));
+    height: calc(454 * calc(500px / ((410 - 22) / 9 * 11 + 22)));
     background: url("../img/masu_dot_xy.png"), url("../img/ban_kaya_a.png");
     background-size: 100%;
     background-repeat: no-repeat;
-    padding: 11.08374px;
+    padding: calc(11 * calc(500px / ((410 - 22) / 9 * 11 + 22)));
     float: left; }
   .cell {
-    width: 41.42409px;
-    height: 46.3502px;
-    margin: 1.00761px;
+    width: calc((388 / 9 - 2)  * calc(500px / ((410 - 22) / 9 * 11 + 22)));
+    height: calc((432 / 9 - 2) * calc(500px / ((410 - 22) / 9 * 11 + 22)));
+    margin: calc(500px / ((410 - 22) / 9 * 11 + 22));
     padding: 0;
     float: left; }
     .cell.highlight {
@@ -148,7 +148,7 @@
       overflow: hidden;
       position: relative; }
   .move-list-wrapper {
-    height: calc(457.45634px - 300px);
+    height: calc(calc(454 * calc(500px / ((410 - 22) / 9 * 11 + 22))) - 300px);
     width: 300px;
     float: left;
     position: relative; }
@@ -158,11 +158,13 @@
       height: 100%;
       overflow: scroll;
       position: relative; }
+  .move-menu-wrapper {
+    display: none; }
   .comment {
     height: 200px;
     width: 300px;
     padding: 0 20px 0 20px;
-    margin-bottom: 15px;
+    margin-top: 15px;
     line-height: 20px;
     float: left; }
     .comment .comment-body {
@@ -176,29 +178,29 @@
 
 @media screen and (max-width: 640px) {
   .board-wrapper {
-    width: 100vw;
-    height: 91.49127vw;
+    width: calc(100vw - 20px);
+    height: calc(454 * calc(calc(100vw - 20px) / ((410 - 22) / 9 * 11 + 22)));
     z-index: 1; }
   .board {
-    width: 100vw;
-    height: 91.49127vw;
+    width: calc(100vw - 20px);
+    height: calc(454 * calc(calc(100vw - 20px) / ((410 - 22) / 9 * 11 + 22)));
     position: absolute; }
   .controller {
-    width: 100vw;
-    height: 91.49127vw;
+    width: calc(100vw - 20px);
+    height: calc(454 * calc(calc(100vw - 20px) / ((410 - 22) / 9 * 11 + 22)));
     position: absolute; }
     .controller .control-area {
       width: 50%;
       height: 100%;
       float: left; }
   .hand-outer {
-    width: 8.68786vw;
+    width: calc(calc((388 / 9 - 2)  * calc(calc(100vw - 20px) / ((410 - 22) / 9 * 11 + 22))) + calc(calc(100vw - 20px) / ((410 - 22) / 9 * 11 + 22)) * 2);
     height: 100%;
     float: left;
     position: relative; }
   .hand {
-    width: 8.68786vw;
-    height: 64.89028vw;
+    width: calc(calc((388 / 9 - 2)  * calc(calc(100vw - 20px) / ((410 - 22) / 9 * 11 + 22))) + calc(calc(100vw - 20px) / ((410 - 22) / 9 * 11 + 22)) * 2);
+    height: calc(calc((432 / 9 - 2) * calc(calc(100vw - 20px) / ((410 - 22) / 9 * 11 + 22))) * 7);
     background: url("../img/ban_dark.png");
     background-repeat: no-repeat;
     position: absolute; }
@@ -207,30 +209,30 @@
     .hand.white {
       top: 0; }
   .hand-cell {
-    width: 8.28482vw;
-    height: 9.27004vw;
+    width: calc((388 / 9 - 2)  * calc(calc(100vw - 20px) / ((410 - 22) / 9 * 11 + 22)));
+    height: calc((432 / 9 - 2) * calc(calc(100vw - 20px) / ((410 - 22) / 9 * 11 + 22)));
     position: relative; }
     .hand-cell .count {
       position: absolute;
       top: 0;
-      right: 0.5178vw;
+      right: calc(calc((388 / 9 - 2)  * calc(calc(100vw - 20px) / ((410 - 22) / 9 * 11 + 22))) / 16);
       color: white;
-      font-size: 3.86252vw;
+      font-size: calc(calc((432 / 9 - 2) * calc(calc(100vw - 20px) / ((410 - 22) / 9 * 11 + 22))) / 2.4);
       text-shadow: .5px .5px black, .5px -.5px black, -.5px .5px black, -.5px -.5px black; }
       .hand-cell .count.hidden {
         display: none; }
   .main-board {
-    width: 82.62427vw;
-    height: 91.49127vw;
+    width: calc(410 * calc(calc(100vw - 20px) / ((410 - 22) / 9 * 11 + 22)));
+    height: calc(454 * calc(calc(100vw - 20px) / ((410 - 22) / 9 * 11 + 22)));
     background: url("../img/masu_dot_xy.png"), url("../img/ban_kaya_a.png");
     background-size: 100%;
     background-repeat: no-repeat;
-    padding: 2.21675vw;
+    padding: calc(11 * calc(calc(100vw - 20px) / ((410 - 22) / 9 * 11 + 22)));
     float: left; }
   .cell {
-    width: 8.28482vw;
-    height: 9.27004vw;
-    margin: 0.20152vw;
+    width: calc((388 / 9 - 2)  * calc(calc(100vw - 20px) / ((410 - 22) / 9 * 11 + 22)));
+    height: calc((432 / 9 - 2) * calc(calc(100vw - 20px) / ((410 - 22) / 9 * 11 + 22)));
+    margin: calc(calc(100vw - 20px) / ((410 - 22) / 9 * 11 + 22));
     padding: 0;
     float: left; }
     .cell.highlight {
@@ -294,32 +296,37 @@
   span.cell.piece {
     background-size: 100%; }
   .board-wrapper {
-    position: relative; }
+    position: relative;
+    margin: 0 10px 10px 10px; }
   .kento {
     width: 100vw;
     height: 100vh;
     position: relative; }
   .game-info-wrapper {
-    margin: 15px 15px 0 15px;
-    line-height: 20px; }
+    margin: 10px;
+    font-size: smaller; }
     .game-info-wrapper .game-info {
+      overflow: auto;
       background-color: whitesmoke;
-      padding: 5px; }
+      padding: 5px;
+      position: relative; }
     .game-info-wrapper .players {
       position: relative;
-      overflow: hidden; }
+      overflow: hidden;
+      float: left; }
       .game-info-wrapper .players div {
         float: left;
         margin-right: 10px; }
     .game-info-wrapper .game {
       overflow: hidden;
-      position: relative; }
+      position: relative;
+      float: left; }
       .game-info-wrapper .game div {
         float: left;
         margin-right: 10px; }
   .comment {
-    height: 15vh;
-    margin: 15px 15px 0 15px; }
+    height: 100%;
+    margin: 10px; }
     .comment .comment-body {
       padding: 5px;
       background-color: whitesmoke;
@@ -328,11 +335,7 @@
       .comment .comment-body p {
         margin: 0; }
   .move-list-wrapper {
-    height: calc(85vh - 91.49127vw - 90px);
-    width: 100vw;
-    padding: 15px;
-    position: relative; }
-    .move-list-wrapper .move-list {
-      height: 100%;
-      overflow: scroll;
-      position: relative; } }
+    display: none; }
+  .move-menu-wrapper {
+    margin: 10px;
+    position: relative; } }

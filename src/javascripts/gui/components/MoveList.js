@@ -27,7 +27,8 @@ class MoveList extends React.Component {
                 <tr key={idx} ref={`kifu-${idx}`}>
                   <MoveEntry idx={idx} entry={entry}
                     onClick={() => this.props.control.setTurn(idx)}
-                    active={idx == this.props.turn} />
+                    active={idx == this.props.turn}
+                    game={this.props.game} />
                 </tr>
               ))}
             </tbody>
@@ -38,11 +39,20 @@ class MoveList extends React.Component {
   }
 }
 
-const MoveEntry = ({ idx, entry, onClick, active }) => (
-  <td className={active ? "active" : null} onClick={onClick}>
-    {idx}. {entry}
-  </td>
-)
+const MoveEntry = ({ idx, entry, onClick, active, game }) => {
+  const ljust = n => {
+    const str = n.toString()
+    let fill = []
+    while (fill.length + str.length < 2) fill.push("0")
+    return fill.join() + str
+  }
+  const { now, total } = game.getTime(idx)
+  return (
+    <td className={active ? "active" : null} onClick={onClick}>
+      {idx}. {entry} ( {now.m} / {total.h}:{ljust(total.m)} )
+    </td>
+  )
+}
 
 let currentInterval = null
 function animateScroll(container, offset, maxHeight) {

@@ -37,6 +37,12 @@ class Game {
     return { cells, black_hand, white_hand, movedCell }
   }
 
+  getTime(turn) {
+    const move = this.player.kifu.moves[turn]
+    if (move && move.time) return move.time
+    return { now: { m: 0, s: 0 }, total: { h: 0, m: 0, s: 0 }}
+  }
+
   getComments(turn) {
     return this.player.getComments(turn)
   }
