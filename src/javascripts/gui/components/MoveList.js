@@ -3,13 +3,13 @@ import ReactDOM from "react-dom"
 
 class MoveList extends React.Component {
   scrollToCurrentTurn(animate = false) {
-    let topIdx = Math.max(this.props.turn - 1, 0)
-    let offset = ReactDOM.findDOMNode(this.refs[`kifu-${topIdx}`]).offsetTop
-    let moveLists = document.getElementsByClassName("move-list")
-    Array.forEach(moveLists, list => {
-      if (animate) animateScroll(list, offset, list.children[0].clientHeight)
-      else list.scrollTop = offset
-    })
+    let topIdx = this.props.turn
+    let bottomListNode = ReactDOM.findDOMNode(this.refs[`kifu-${this.props.turn}`])
+    let moveList = ReactDOM.findDOMNode(this.refs["move-list"])
+    let scrollTopTo = bottomListNode.offsetTop + bottomListNode.clientHeight - moveList.clientHeight
+
+    if (animate) animateScroll(moveList, scrollTopTo, moveList.children[0].clientHeight)
+    else moveList.scrollTop = scrollTopTo
   }
   componentDidUpdate() { this.scrollToCurrentTurn(true) }
   componentDidMount() {
@@ -20,7 +20,7 @@ class MoveList extends React.Component {
   render() {
     return (
       <div className="move-list-wrapper">
-        <div className="move-list">
+        <div className="move-list" ref="move-list">
           <table className="table">
             <tbody>
               {this.props.game.jpKifu.map((entry, idx) => (
@@ -55,11 +55,11 @@ const MoveEntry = ({ idx, entry, onClick, active, game }) => {
 }
 
 let currentInterval = null
-function animateScroll(container, offset, maxHeight) {
+function animateScroll(container, scrollTopTo, maxHeight) {
   if (currentInterval) clearInterval(currentInterval)
-  const base = container.scrollTop
-  const height = offset - base
-  const duration = height / maxHeight * 800
+  const currentScrollTop = container.scrollTop
+  const scrollAmmount = scrollTopTo - currentScrollTop
+  const duration = scrollAmmount / maxHeight * 800
   const interval = duration / 10
   const step = Math.PI / ( duration / interval )
 
@@ -67,8 +67,8 @@ function animateScroll(container, offset, maxHeight) {
   currentInterval = setInterval(() => {
     if (count < duration / interval) {
         count += 1
-        let diff = height * (1 - Math.cos(count * step)) / 2
-        container.scrollTop = base + diff
+        let diff = scrollAmmount * (1 - Math.cos(count * step)) / 2
+        container.scrollTop = currentScrollTop + diff
     } else clearInterval(currentInterval);
   }, interval);
 }
