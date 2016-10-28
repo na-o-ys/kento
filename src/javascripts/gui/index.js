@@ -6,20 +6,29 @@ import reducers from "./reducers"
 import KentoApp from "./container/KentoApp.js"
 import JKFPlayer from "json-kifu-format"
 
-import { setTurn } from "./actions"
+import { setGame, setTurn } from "./actions"
 
-function start(game, turn) {
+function start(game, turn, { setDocumentTitle }) {
   let store = createStore(
     reducers,
-    { game, turn }
+    { game, turn, turnsRead: game.maxTurn }
   )
   setKeyListener(store)
+  store.subscribe(() => {
+    const { game, turnsRead } = store.getState()
+    setDocumentTitle(game, game.maxTurn - turnsRead)
+  })
+
   render(
     <Provider store={store}>
       <KentoApp />
     </Provider>,
     document.getElementById("main")
   )
+
+  return {
+    updateGame(game) { store.dispatch(setGame(game)) }
+  }
 }
 
 function setKeyListener(store) {
