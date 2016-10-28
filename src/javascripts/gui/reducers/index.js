@@ -1,8 +1,13 @@
 import { combineReducers } from "redux"
-import { SET_TURN } from "../actions"
+import { SET_GAME, SET_TURN } from "../actions"
 
 function game(state = null, action) {
-  return state
+  switch (action.type) {
+    case SET_GAME:
+      return action.game
+    default:
+      return state
+  }
 }
 
 function turn(state = 0, action) {
@@ -15,6 +20,15 @@ function turn(state = 0, action) {
   }
 }
 
-const reducers = combineReducers({ game, turn })
+function turnsRead(state = 0, action) {
+  switch (action.type) {
+    case SET_TURN:
+      return Math.max(state, action.turn)
+    default:
+      return state
+  }
+}
+
+const reducers = combineReducers({ game, turn, turnsRead })
 
 export default reducers

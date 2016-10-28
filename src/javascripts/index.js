@@ -1,27 +1,48 @@
 import docReady from "doc-ready"
 import Game from "lib/game.js"
-import start from "gui"
+import startGUI from "gui"
 import axios from "axios"
-
-function fetchKifu() {
-  const elem = document.getElementById('kifu')
-  if ('kifu' in elem.dataset) {
-    return Promise.resolve(elem.dataset.kifu)
-  }
-  if ('url' in elem.dataset) {
-    return axios.get(elem.dataset.url)
-      .then(res => res.data)
-  }
-}
-
-function loadGame() {
-  return fetchKifu().then(Game.parseText)
-}
 
 docReady(() => {
   let turn = 0
   if (location.hash) turn = parseInt(location.hash.substr(1))
-  loadGame()
-    .then(game => start(game, turn))
-    .catch(e => { throw e })
+
+  const kifuElem = document.getElementById('kifu')
+  if ('kifu' in kifuElem.dataset) {
+    const game = Game.parseText(kifuElem.dataset.kifu)
+    setDocumentTitle(game, 0)
+    startGUI(game, turn)
+  }
+  if ('url' in kifuElem.dataset) {
+    subscribeGame(kifuElem.dataset.url, genGameListener(turn))
+  }
 })
+
+function setDocumentTitle(game, unreadCount) {
+  const countText = unreadCount != 0 ? `(${unreadCount}) ` : ""
+  document.title = countText + game.getHeader()["棋戦"]
+}
+
+function genGameListener(turn) {
+  let updateGame = null
+  let isFirst = true
+  return game => {
+    if (isFirst) {
+      setDocumentTitle(game, 0)
+      updateGame = startGUI(
+        game,
+        turn,
+        { setDocumentTitle }
+      ).updateGame
+      isFirst = false
+    }
+    updateGame(game)
+  }
+}
+
+function subscribeGame(url, callback) {
+  const fetchGame = () => axios.get(url)
+      .then(res => callback(Game.parseText(res.data)))
+  fetchGame()
+  setInterval(fetchGame, 1 * 60 * 1000)
+}
