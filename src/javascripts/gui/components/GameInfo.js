@@ -1,6 +1,8 @@
+// @flow
 import React from "react"
+import type { Game } from "../../lib/game"
 
-const GameInfo = ({ game }) => {
+export const GameInfo = ({ game }: { game : Game }) => {
   let header = game.getHeader()
   return (
     <div className="game-info-wrapper">
@@ -17,5 +19,3 @@ const GameInfo = ({ game }) => {
     </div>
   )
 }
-
-export default GameInfo
