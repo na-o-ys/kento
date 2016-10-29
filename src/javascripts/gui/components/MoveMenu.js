@@ -1,8 +1,16 @@
+// @flow
 import React from "react"
 import ReactDOM from "react-dom"
+import type { Game } from "../../lib/game"
+import type { GameControl } from "../types"
 
-class MoveMenu extends React.Component {
-  handleChange(e) {
+export class MoveMenu extends React.Component {
+  props: {
+    turn: number,
+    control: GameControl,
+    game: Game
+  }
+  handleChange(e: any) {
     this.props.control.setTurn(e.target.value)
   }
   render() {
@@ -20,7 +28,7 @@ class MoveMenu extends React.Component {
   }
 }
 
-const MoveOption = ({game, entry, idx}) => {
+const MoveOption = ({game, entry, idx}: { game: Game, entry: string, idx: number }) => {
   const ljust = n => {
     const str = n.toString()
     let fill = []
@@ -34,5 +42,3 @@ const MoveOption = ({game, entry, idx}) => {
     </option>
   )
 }
-
-export default MoveMenu

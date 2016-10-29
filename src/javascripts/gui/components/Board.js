@@ -1,6 +1,8 @@
+// @flow
 import React from "react"
+import type { Position } from "../../lib/game"
 
-const Board = ({ position }) => (
+export const Board = ({ position }: { position: Position }) => (
   <div className="board">
 
     <div className="hand-outer">
@@ -32,7 +34,7 @@ const Cell = ({ piece, highlight }) => {
   )
 }
 
-let kinds = ['R', 'B', 'G', 'S', 'N', 'L', 'P'] // order
+const kinds = ['R', 'B', 'G', 'S', 'N', 'L', 'P'] // order
 const Hand = ({ hands, color }) => {
   let _kinds = (color == "black") ? kinds : kinds.slice().reverse()
   let pieces = []
@@ -60,5 +62,3 @@ const HandCell = ({ piece, count }) => {
     </div>
   )
 }
-
-export default Board

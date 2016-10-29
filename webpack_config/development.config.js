@@ -21,10 +21,7 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: [/node_modules/, /json-kifu-format/],
-        loader: "babel-loader",
-        query: {
-          presets: ['es2015', 'react']
-        }
+        loader: "babel-loader"
       }
     ]
   },

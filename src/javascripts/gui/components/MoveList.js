@@ -1,11 +1,12 @@
+// @flow
 import React from "react"
 import ReactDOM from "react-dom"
 
-class MoveList extends React.Component {
-  scrollToCurrentTurn(animate = false) {
+export class MoveList extends React.Component {
+  scrollToCurrentTurn(animate: boolean = false) {
     let topIdx = this.props.turn
-    let bottomListNode = ReactDOM.findDOMNode(this.refs[`kifu-${this.props.turn}`])
-    let moveList = ReactDOM.findDOMNode(this.refs["move-list"])
+    let bottomListNode: HTMLElement = ReactDOM.findDOMNode(this.refs[`kifu-${this.props.turn}`])
+    let moveList: HTMLElement = ReactDOM.findDOMNode(this.refs["move-list"])
     let scrollTopTo = bottomListNode.offsetTop + bottomListNode.clientHeight - moveList.clientHeight
 
     if (animate) animateScroll(moveList, scrollTopTo, moveList.children[0].clientHeight)
@@ -55,7 +56,7 @@ const MoveEntry = ({ idx, entry, onClick, active, game }) => {
 }
 
 let currentInterval = null
-function animateScroll(container, scrollTopTo, maxHeight) {
+function animateScroll(container: HTMLElement, scrollTopTo: number , maxHeight: number) {
   if (currentInterval) clearInterval(currentInterval)
   const currentScrollTop = container.scrollTop
   const scrollAmmount = scrollTopTo - currentScrollTop
@@ -69,8 +70,6 @@ function animateScroll(container, scrollTopTo, maxHeight) {
         count += 1
         let diff = scrollAmmount * (1 - Math.cos(count * step)) / 2
         container.scrollTop = currentScrollTop + diff
-    } else clearInterval(currentInterval);
+    } else if (currentInterval) clearInterval(currentInterval);
   }, interval);
 }
-
-export default MoveList

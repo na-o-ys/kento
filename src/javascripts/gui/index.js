@@ -1,14 +1,21 @@
+// @flow
 import React from "react"
 import { render } from "react-dom"
 import { Provider } from "react-redux"
 import { createStore } from "redux"
-import reducers from "./reducers"
+import { reducers } from "./reducers"
 import KentoApp from "./container/KentoApp.js"
 import JKFPlayer from "json-kifu-format"
-
 import { setGame, setTurn } from "./actions"
+import type { Game } from "../lib/game"
 
-function start(game, turn, { setDocumentTitle }) {
+type Callbacks = {
+  setDocumentTitle: (game: Game, turn: number) => void
+}
+const defaultCallback: Callbacks = {
+  setDocumentTitle: () => {}
+}
+function start(game: Game, turn: number, { setDocumentTitle }: Callbacks = defaultCallback) {
   let store = createStore(
     reducers,
     { game, turn, turnsRead: game.maxTurn }
@@ -16,7 +23,7 @@ function start(game, turn, { setDocumentTitle }) {
   setKeyListener(store)
   store.subscribe(() => {
     const { game, turnsRead } = store.getState()
-    setDocumentTitle(game, game.maxTurn - turnsRead)
+    if (setDocumentTitle) setDocumentTitle(game, game.maxTurn - turnsRead)
   })
 
   render(
@@ -27,14 +34,14 @@ function start(game, turn, { setDocumentTitle }) {
   )
 
   return {
-    updateGame(game) { store.dispatch(setGame(game)) }
+    updateGame(game: Game) { store.dispatch(setGame(game)) }
   }
 }
 
 function setKeyListener(store) {
-  let maxTurn = store.getState().game.maxTurn
-  document.addEventListener('keydown', e => {
-    let turn = store.getState().turn
+  document.addEventListener('keydown', (e: KeyboardEvent) => {
+    const { turn } = store.getState()
+    const { maxTurn } = store.getState().game
     if (e.keyCode == 37) {
       store.dispatch(setTurn(Math.max(turn - 1, 0)))
     }

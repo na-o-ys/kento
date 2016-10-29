@@ -1,6 +1,7 @@
+// @flow
 import docReady from "doc-ready"
-import Game from "lib/game.js"
-import startGUI from "gui"
+import Game from "./lib/game"
+import startGUI from "./gui"
 import axios from "axios"
 
 docReady(() => {
@@ -24,19 +25,17 @@ function setDocumentTitle(game, unreadCount) {
 }
 
 function genGameListener(turn) {
-  let updateGame = null
-  let isFirst = true
+  let updateGame: ?(game: Game) => void = null
   return game => {
-    if (isFirst) {
+    if (updateGame) updateGame(game)
+    else {
       setDocumentTitle(game, 0)
       updateGame = startGUI(
         game,
         turn,
         { setDocumentTitle }
       ).updateGame
-      isFirst = false
     }
-    updateGame(game)
   }
 }
 
