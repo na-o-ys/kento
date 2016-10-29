@@ -12,6 +12,10 @@
     "build:javascripts_prod": "NODE_ENV=production webpack -p",
     "build:javascripts_dev": "NODE_ENV=development webpack",
     "build": "npm-run-all clean --parallel build:*",
+    "build-mt:development": "NODE_ENV=development webpack --config webpack.config.mt.js",
+    "build-mt:production": "NODE_ENV=production webpack --config webpack.config.mt.js",
+    "build-mt": "npm-run-all --parallel build-mt:*",
+    "watch-mt": "NODE_ENV=development webpack --config webpack.config.mt.js --watch",
     "test": "NODE_ENV=test NODE_PATH=app/assets/javascripts/src mocha --compilers js:babel-register $(find app/assets/javascripts/test -name '*.spec.js') --require app/assets/javascripts/test/global.js",
     "flow": "flow; test $? -eq 0 -o $? -eq 2"
   },
@@ -37,21 +41,23 @@
     "mocha": "^2.4.5",
     "nock": "^7.2.2",
     "node-sass": "^3.7.0",
-    "npm-run-all": "^1.8.0",
-    "react-addons-test-utils": "^0.14.7",
+    "npm-run-all": "^3.1.1",
+    "react-addons-test-utils": "^15.3.2",
     "sinon": "^1.17.3",
-    "webpack": "^1.12.14"
+    "webpack": "^1.13.3"
   },
   "dependencies": {
     "axios": "^0.9.1",
     "doc-ready": "^1.0.3",
     "js-cookie": "^2.1.0",
     "json-kifu-format": "^1.0.4",
-    "react": "^0.14.7",
-    "react-dom": "^0.14.7",
-    "react-redux": "^4.4.0",
-    "redux": "^3.3.1",
-    "redux-thunk": "^2.0.1"
+    "material-ui": "^0.16.1",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-redux": "^4.4.5",
+    "react-tap-event-plugin": "^1.0.0",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.1.0"
   },
   "private": true
 }
