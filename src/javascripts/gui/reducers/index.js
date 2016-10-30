@@ -1,10 +1,10 @@
 // @flow
 import { combineReducers } from "redux"
 import { SET_GAME, SET_TURN } from "../actions"
+import { Game, GameZero } from "../../lib/game"
 import type { Action } from "../actions"
-import type { Game } from "../../lib/game"
 
-function game(state: Game, action: Action): Game {
+function game(state: Game = GameZero, action: Action): Game {
   switch (action.type) {
     case SET_GAME:
       return action.game
@@ -13,7 +13,7 @@ function game(state: Game, action: Action): Game {
   }
 }
 
-function turn(state: number, action: Action): number {
+function turn(state: number = 0, action: Action): number {
   switch (action.type) {
     case SET_TURN:
       history.replaceState(null, "", `#${action.turn}`)
@@ -23,7 +23,7 @@ function turn(state: number, action: Action): number {
   }
 }
 
-function turnsRead(state: number, action): number {
+function turnsRead(state: number = 0, action): number {
   switch (action.type) {
     case SET_TURN:
       return Math.max(state, action.turn)

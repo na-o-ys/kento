@@ -11,12 +11,14 @@ export type Hand = {
   L: number,
   P: number
 }
+
 export type Position = {
   cells: Array<?Piece>,
   black_hand: Hand,
   white_hand: Hand,
   movedCell: number
-} 
+}
+
 export class Game {
   player: JKFPlayer
   _jpKifu: string[]
@@ -73,6 +75,8 @@ export class Game {
     return this.player.kifu.header
   }
 }
+
+export const GameZero = Game.parseText("")
 
 // type Piece = "K" | "R" | "B" | "G" | "S" | "N" | "L" | "P" |
 //              "+R" | "+B" | "+S" | "+N" | "+L" | "+P" |
