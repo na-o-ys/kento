@@ -16,6 +16,7 @@
     "build-mt:production": "NODE_ENV=production webpack --config webpack.config.mt.js",
     "build-mt": "npm-run-all --parallel build-mt:*",
     "watch-mt": "NODE_ENV=development webpack --config webpack.config.mt.js --watch",
+    "start": "webpack-dev-server --config webpack.dev-server.config.js --progress --inline --colors",
     "test": "NODE_ENV=test NODE_PATH=app/assets/javascripts/src mocha --compilers js:babel-register $(find app/assets/javascripts/test -name '*.spec.js') --require app/assets/javascripts/test/global.js",
     "flow": "flow; test $? -eq 0 -o $? -eq 2"
   },
@@ -57,7 +58,8 @@
     "react-redux": "^4.4.5",
     "react-tap-event-plugin": "^1.0.0",
     "redux": "^3.6.0",
-    "redux-thunk": "^2.1.0"
+    "redux-thunk": "^2.1.0",
+    "webpack-dev-server": "^1.16.2"
   },
   "private": true
 }
