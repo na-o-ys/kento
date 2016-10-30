@@ -47,7 +47,7 @@ export class Game {
     let cells: Array<?Piece> = []
     for (let r = 0; r < 9; r++) for (let f = 0; f < 9; f++) {
       let { color, kind } = state.board[8 - f][r]
-      if (color && kind) {
+      if (color !== null && color !== undefined && kind) {
         cells.push(boardCellToPiece({ color, kind }))
       } else cells.push(null)
     }
