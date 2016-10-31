@@ -2,33 +2,51 @@
 import React from "react"
 import ReactDOM from "react-dom"
 import { createStore } from "redux"
+import { Provider } from "react-redux"
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider"
 import RaisedButton from "material-ui/RaisedButton"
 import Paper from "material-ui/Paper"
 import KentoApp from "./container/KentoApp"
 import { reducers } from "./reducers"
+import { setGame } from "./actions"
 import type { Game } from "./lib/game"
+import type { Store } from "redux"
+import type { State } from "./container/KentoApp"
 
 const App = store => (
-  <MuiThemeProvider store={store}>
-    <KentoApp />
-  </MuiThemeProvider>
+  <Provider store={store}>
+    <MuiThemeProvider>
+      <KentoApp />
+    </MuiThemeProvider>
+  </Provider>
 )
 
-export const start = (game: Game, turn: number) => {
+export function startGame(game: Game, turn: number) {
+  return initializeRender(game, turn)
+}
+
+type GameListener = (game: Game) => void
+export function registerGame(subscribe: (x: GameListener) => void, turn: number) {
+  let store: Store<State, *>
+  subscribe(game => {
+    if (!store) {
+      store = initializeRender(game, turn)
+    } else {
+      store.dispatch(setGame(game))
+    }
+  })
+}
+
+function initializeRender(game: Game, turn: number) {
   let store = createStore(
     reducers,
     { game, turn, turnsRead: game.maxTurn }
   )
-
   ReactDOM.render(
-    <App store={store}/>,
+    <App store={store} />,
     document.getElementById("main")
   )
-}
-
-export function renderer() {
-
+  return store
 }
 
 const SampleComponent = () => (
