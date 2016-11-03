@@ -21,7 +21,10 @@ const config = {
   devtool: 'eval',
   output: {
     path: buildPath,
-    filename: 'app.js',
+    filename: 'app.js'
+  },
+  devServer: {
+    contentBase: 'dist'
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),

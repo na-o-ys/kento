@@ -13,7 +13,7 @@ import type { Game } from "./lib/game"
 import type { Store } from "redux"
 import type { State } from "./container/KentoApp"
 
-const App = store => (
+const App = ({store}) => (
   <Provider store={store}>
     <MuiThemeProvider>
       <KentoApp />
