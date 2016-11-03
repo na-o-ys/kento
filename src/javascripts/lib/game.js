@@ -76,7 +76,7 @@ export class Game {
   }
 }
 
-export const GameZero = Game.parseText("")
+export const emptyGame = Game.parseText("")
 
 // type Piece = "K" | "R" | "B" | "G" | "S" | "N" | "L" | "P" |
 //              "+R" | "+B" | "+S" | "+N" | "+L" | "+P" |

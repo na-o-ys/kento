@@ -21,7 +21,7 @@ export class MainBoard extends React.Component {
 
   render() {
     return (
-      <div style={getMainBoardStyle(this.props.scale)}>
+      <div style={{...getMainBoardStyle(this.props.scale), ...this.props.style}}>
         {[0,1,2,3,4,5,6,7,8].map(rankIdx => (
           <Rank key={rankIdx} cells={this.rankCells(rankIdx)} rankIdx={rankIdx} scale={this.props.scale} />
         ))}

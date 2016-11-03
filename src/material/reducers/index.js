@@ -1,10 +1,10 @@
 // @flow
 import { combineReducers } from "redux"
 import { SET_GAME, SET_TURN } from "../actions"
-import { Game, GameZero } from "../lib/game"
+import { Game, emptyGame } from "../lib/game"
 import type { Action } from "../actions"
 
-function game(state: Game = GameZero, action: Action): Game {
+function game(state: Game = emptyGame, action: Action): Game {
   switch (action.type) {
     case SET_GAME:
       return action.game
