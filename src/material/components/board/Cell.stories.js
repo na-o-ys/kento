@@ -10,36 +10,36 @@ storiesOf('Cell', module)
   .add('all', () => (
     <div>
       <div>
-        <Cell piece="K" highlight={true} style={cellStyle} />
-        <Cell piece="R" highlight={true} style={cellStyle} />
-        <Cell piece="B" highlight={true} style={cellStyle} />
-        <Cell piece="G" highlight={true} style={cellStyle} />
-        <Cell piece="S" highlight={true} style={cellStyle} />
-        <Cell piece="N" highlight={true} style={cellStyle} />
-        <Cell piece="L" highlight={false} style={cellStyle} />
-        <Cell piece="P" highlight={true} style={cellStyle} />
-        <Cell piece="+R" highlight={true} style={cellStyle} />
-        <Cell piece="+B" highlight={true} style={cellStyle} />
-        <Cell piece="+S" highlight={true} style={cellStyle} />
-        <Cell piece="+N" highlight={true} style={cellStyle} />
-        <Cell piece="+L" highlight={false} style={cellStyle} />
-        <Cell piece="+P" highlight={true} style={cellStyle} />
+        <Cell piece="K" style={cellStyle} />
+        <Cell piece="R" style={cellStyle} />
+        <Cell piece="B" style={cellStyle} />
+        <Cell piece="G" style={cellStyle} />
+        <Cell piece="S" style={cellStyle} />
+        <Cell piece="N" style={cellStyle} />
+        <Cell piece="L" style={cellStyle} />
+        <Cell piece="P" style={cellStyle} />
+        <Cell piece="+R" style={cellStyle} />
+        <Cell piece="+B" style={cellStyle} />
+        <Cell piece="+S" style={cellStyle} />
+        <Cell piece="+N" style={cellStyle} />
+        <Cell piece="+L" style={cellStyle} />
+        <Cell piece="+P" style={cellStyle} />
       </div>
       <div>
-        <Cell piece="k" highlight={true} style={cellStyle} />
-        <Cell piece="r" highlight={true} style={cellStyle} />
-        <Cell piece="b" highlight={true} style={cellStyle} />
-        <Cell piece="g" highlight={true} style={cellStyle} />
-        <Cell piece="s" highlight={true} style={cellStyle} />
-        <Cell piece="n" highlight={true} style={cellStyle} />
-        <Cell piece="l" highlight={false} style={cellStyle} />
-        <Cell piece="p" highlight={true} style={cellStyle} />
-        <Cell piece="+r" highlight={true} style={cellStyle} />
-        <Cell piece="+b" highlight={true} style={cellStyle} />
-        <Cell piece="+s" highlight={true} style={cellStyle} />
-        <Cell piece="+n" highlight={true} style={cellStyle} />
-        <Cell piece="+l" highlight={false} style={cellStyle} />
-        <Cell piece="+p" highlight={true} style={cellStyle} />
+        <Cell piece="k" style={cellStyle} />
+        <Cell piece="r" style={cellStyle} />
+        <Cell piece="b" style={cellStyle} />
+        <Cell piece="g" style={cellStyle} />
+        <Cell piece="s" style={cellStyle} />
+        <Cell piece="n" style={cellStyle} />
+        <Cell piece="l" style={cellStyle} />
+        <Cell piece="p" style={cellStyle} />
+        <Cell piece="+r" style={cellStyle} />
+        <Cell piece="+b" style={cellStyle} />
+        <Cell piece="+s" style={cellStyle} />
+        <Cell piece="+n" style={cellStyle} />
+        <Cell piece="+l" style={cellStyle} />
+        <Cell piece="+p" style={cellStyle} />
       </div>
     </div>
   ))

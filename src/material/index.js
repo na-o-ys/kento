@@ -8,6 +8,7 @@ import Game from "./lib/game"
 // Needed for onTouchTap
 // http://stackoverflow.com/a/34015469/988941
 injectTapEventPlugin()
+injectHeaders()
 
 docReady(() => {
   const kifuElem = document.getElementById('kifu')
@@ -32,4 +33,16 @@ function genSubscribeKifu(url) {
     fetchGame()
     setInterval(fetchGame, 1 * 60 * 1000)
   }
+}
+
+function injectHeaders() {
+  let iconLink = document.createElement("link")
+  iconLink.href = "https://fonts.googleapis.com/icon?family=Material+Icons"
+  iconLink.rel = "stylesheet"
+  document.head.appendChild(iconLink)
+
+  let flexboxLink = document.createElement("link")
+  flexboxLink.href = "//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
+  flexboxLink.rel = "stylesheet"
+  document.head.appendChild(flexboxLink)
 }

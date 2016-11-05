@@ -17,8 +17,8 @@ const initialCells = [
 
 storiesOf('MainBoard', module)
   .add('initial', () => (
-    <MainBoard cells={initialCells} movedCell={-1} />
+    <MainBoard cells={initialCells} />
   ))
   .add('small', () => (
-    <MainBoard cells={initialCells} movedCell={-1} scale={0.7} />
+    <MainBoard cells={initialCells} scale={0.7} />
   ))

@@ -4,7 +4,7 @@ import Cell from "./Cell"
 import type { Style } from "../../types"
 
 type Hands = { [key: string]: number }
-export class Hand extends React.Component {
+export class VHand extends React.Component {
   props: {
     hands: Hands,
     color: string,
@@ -30,20 +30,25 @@ export class Hand extends React.Component {
     return (
       <div style={{...getHandStyle(this.props.scale), ...this.props.style}}>
         {this.formatHandPieces().map(hand => (
-          <Cell key={hand.piece} piece={hand.piece} count={hand.count} scale={this.props.scale} />
+          <Cell key={hand.piece} piece={hand.piece} count={hand.count} scale={this.props.scale} style={getCellStyle(this.props.color)} />
         ))}
       </div>
     )
   }
 }
 
-export default Hand
+export default VHand
 
 const getHandStyle = (scale: number) => ({
-  width:  scale * (43 + 2),
-  height: scale * 454,
+  width:  scale * 390,
+  height: scale * 48,
   background: "url('img/ban_dark.png')",
-  backgroundRepeat: "no-repeat"
+  paddingLeft: scale * 10,
+  paddingRight: scale * 10
+})
+
+const getCellStyle = (color: string) => ({
+  float: color == "black" ? "left" : "right"
 })
 
 const pieceDisplayOrder = {

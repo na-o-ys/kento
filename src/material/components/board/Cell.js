@@ -52,12 +52,12 @@ const getCountStyle = scale => ({
 })
 
 function getCellStyle({ piece, highlight, scale }) {
-  // TODO: highlight
   let cellStyle: Style = {
     backgroundSize: "100%",
     display: "block"
   }
   if (piece) cellStyle["backgroundImage"] = `url(${getPieceImagePath(piece)})`
+  if (highlight) cellStyle["backgroundColor"] = "rgba(255, 255, 255, 0.7)"
   return { ...cellStyle, ...cellSize(scale) }
 }
 

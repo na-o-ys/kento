@@ -1,8 +1,26 @@
 // @flow
 import React from "react"
 import ReactDOM from "react-dom"
+import Drawer from "material-ui/Drawer"
+import { List, ListItem } from "material-ui/List"
+import { MenuItem } from "material-ui/Menu"
+import SelectableList from "./SelectableList"
+import {grey400, darkBlack, lightBlack} from 'material-ui/styles/colors'
+import type { Game } from "../lib/game"
+import type { GameControl } from "../types"
+import type { TimeFormat } from "json-kifu-format"
 
 export class MoveList extends React.Component {
+  props: {
+    game: Game,
+    turn: number,
+    control: GameControl
+  }
+
+  handleChange(turn: number) {
+    this.props.control.setTurn(turn)
+  }
+
   scrollToCurrentTurn(animate: boolean = false) {
     let topIdx = this.props.turn
     let bottomListNode: HTMLElement = ReactDOM.findDOMNode(this.refs[`kifu-${this.props.turn}`])
@@ -12,47 +30,42 @@ export class MoveList extends React.Component {
     if (animate) animateScroll(moveList, scrollTopTo, moveList.children[0].clientHeight)
     else moveList.scrollTop = scrollTopTo
   }
+
   componentDidUpdate() { this.scrollToCurrentTurn(true) }
   componentDidMount() {
     setTimeout(() => window.requestAnimationFrame(
       () => this.scrollToCurrentTurn()
     ), 0)
   }
+
+  usedTimeFormat(turn: number) { return this.props.game.getTime(turn).now.m }
+
   render() {
     return (
-      <div className="move-list-wrapper">
-        <div className="move-list" ref="move-list">
-          <table className="table">
-            <tbody>
-              {this.props.game.jpKifu.map((entry, idx) => (
-                <tr key={idx} ref={`kifu-${idx}`}>
-                  <MoveEntry idx={idx} entry={entry}
-                    onClick={() => this.props.control.setTurn(idx)}
-                    active={idx == this.props.turn}
-                    game={this.props.game} />
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </div>
+      <Drawer openSecondary={true} width={200}>
+        <SelectableList value={this.props.turn}>
+          {this.props.game.jpKifu.map((kifuTxt, idx) => (
+            <ListItem
+              key={idx}
+              value={idx}
+              onClick={() => this.handleChange(idx)}
+              primaryText={
+                <span>
+                  <small style={{color: lightBlack}}>
+                    {idx}.
+                  </small>
+                  &nbsp;{kifuTxt}&nbsp;
+                  <small style={{color: lightBlack}}>
+                    {this.usedTimeFormat(idx)}
+                  </small>
+                </span>
+              }
+            />
+          ))}
+        </SelectableList>
+      </Drawer>
     )
   }
-}
-
-const MoveEntry = ({ idx, entry, onClick, active, game }) => {
-  const ljust = n => {
-    const str = n.toString()
-    let fill = []
-    while (fill.length + str.length < 2) fill.push("0")
-    return fill.join() + str
-  }
-  const { now, total } = game.getTime(idx)
-  return (
-    <td className={active ? "active" : null} onClick={onClick}>
-      {idx}. {entry} ( {now.m} / {total.h}:{ljust(total.m)} )
-    </td>
-  )
 }
 
 let currentInterval = null

@@ -14,7 +14,7 @@ declare module 'json-kifu-format' {
     special?: string;
     forks?: MoveFormat[][];
   }
-  declare interface TimeFormat{
+  declare export interface TimeFormat{
     h?: number;
     m: number;
     s: number;
