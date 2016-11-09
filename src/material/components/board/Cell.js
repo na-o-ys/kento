@@ -9,41 +9,13 @@ type CellProps = {
   style?: Style,
   scale?: number
 }
+
 export const Cell = ({piece, highlight = false, count = 1, style = {}, scale = 1}: CellProps) => (
   <div style={{...getOuterStyle(scale), ...style}}>
     <span style={getCellStyle({piece, highlight, scale})}></span>
     {count > 1 ? <Count {...{count, scale}} /> : null}
   </div>
 )
-
-export class _Cell extends React.Component {
-  props: {
-    piece: ?string,
-    highlight: boolean,
-    count: number,
-    style: Style,
-    scale: number
-  }
-  static defaultProps = {
-    highlight: false,
-    count: 1,
-    style: {},
-    scale: 1
-  }
-
-  shouldShowCount() {
-    return this.props.count > 1
-  }
-
-  render() {
-    return (
-      <div style={{...getOuterStyle(this.props.scale), ...this.props.style}}>
-        <span style={getCellStyle(this.props)}></span>
-        {this.shouldShowCount() ? <Count {...this.props} /> : null}
-      </div>
-    )
-  }
-}
 
 export default Cell
 

@@ -3,36 +3,23 @@ import React from "react"
 import Cell from "./Cell"
 import type { Style } from "../../types"
 
-export class MainBoard extends React.Component {
-  props: {
-    cells: Array<?string>,
-    highlightCell: number,
-    style: Style,
-    scale: number
-  }
-  static defaultProps = {
-    highlightCell: -1,
-    style: {},
-    scale: 1
-  }
+type MainBoardProps = {
+  cells: Array<?string>,
+  highlightCell?: number,
+  style?: Style,
+  scale?: number
+}
 
-  rankCells(rankIdx: number) {
-    return this.props.cells.slice(rankIdx * 9, (rankIdx + 1) * 9)
-  }
-
-  highlightIdx(rankIdx: number) {
-    return this.props.highlightCell - rankIdx * 9
-  }
-
-  render() {
-    return (
-      <div style={{...getMainBoardStyle(this.props.scale), ...this.props.style}}>
-        {[0,1,2,3,4,5,6,7,8].map(rankIdx => (
-          <Rank key={rankIdx} cells={this.rankCells(rankIdx)} rankIdx={rankIdx} scale={this.props.scale} highlightIdx={this.highlightIdx(rankIdx)} />
-        ))}
-      </div>
-    )
-  }
+export const MainBoard = ({cells, highlightCell = -1, style = {}, scale = 1}: MainBoardProps) => {
+  const rankCells    = (rankIdx: number) => cells.slice(rankIdx * 9, (rankIdx + 1) * 9)
+  const highlightIdx = (rankIdx: number) => highlightCell - rankIdx * 9
+  return (
+    <div style={{...getMainBoardStyle(scale), ...style}}>
+      {[0,1,2,3,4,5,6,7,8].map(rankIdx => (
+        <Rank key={rankIdx} cells={rankCells(rankIdx)} rankIdx={rankIdx} scale={scale} highlightIdx={highlightIdx(rankIdx)} />
+      ))}
+    </div>
+  )
 }
 
 export default MainBoard

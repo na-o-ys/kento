@@ -27,7 +27,7 @@ export const Kento = ({game, turn, control}: { game: Game, turn: number, control
         </Paper>
       </div>
       <div className="col-sm-3">
-        <MoveList game={game} turn={turn} control={control} />
+        <MoveList game={game} turn={turn} onSelectTurn={control.setTurn} />
       </div>
     </div>
   )
