@@ -1,0 +1,320 @@
+exports[`default`] = `
+<div
+  style={
+    Object {
+      "muiPrepared": true,
+      "padding": 0,
+      "paddingBottom": 8,
+      "paddingTop": 8,
+    }
+  }>
+  <div>
+    <div
+      open={null}
+      style={
+        Object {
+          "WebkitTransition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
+          "backgroundColor": null,
+          "color": "rgba(0, 0, 0, 0.87)",
+          "display": "block",
+          "fontSize": 16,
+          "lineHeight": "16px",
+          "marginLeft": 0,
+          "muiPrepared": true,
+          "paddingBottom": 16,
+          "paddingLeft": 72,
+          "paddingRight": 16,
+          "paddingTop": 16,
+          "position": "relative",
+          "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
+        }
+      }>
+      <span
+        className="material-icons"
+        color="#757575"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={
+          Object {
+            "MozUserSelect": "none",
+            "WebkitTransition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
+            "WebkitUserSelect": "none",
+            "color": "#757575",
+            "display": "block",
+            "fontSize": 24,
+            "height": 24,
+            "left": 4,
+            "margin": 12,
+            "marginRight": 12,
+            "msUserSelect": "none",
+            "muiPrepared": true,
+            "position": "absolute",
+            "top": 0,
+            "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
+            "userSelect": "none",
+            "width": 24,
+          }
+        }>
+        schedule
+      </span>
+      <div
+        style={
+          Object {
+            "muiPrepared": true,
+          }
+        }>
+        2016/11/01 10:00
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      open={null}
+      style={
+        Object {
+          "WebkitTransition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
+          "backgroundColor": null,
+          "color": "rgba(0, 0, 0, 0.87)",
+          "display": "block",
+          "fontSize": 16,
+          "lineHeight": "16px",
+          "marginLeft": 0,
+          "muiPrepared": true,
+          "paddingBottom": 16,
+          "paddingLeft": 72,
+          "paddingRight": 16,
+          "paddingTop": 16,
+          "position": "relative",
+          "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
+        }
+      }>
+      <span
+        className="material-icons"
+        color="#757575"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={
+          Object {
+            "MozUserSelect": "none",
+            "WebkitTransition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
+            "WebkitUserSelect": "none",
+            "color": "#757575",
+            "display": "block",
+            "fontSize": 24,
+            "height": 24,
+            "left": 4,
+            "margin": 12,
+            "marginRight": 12,
+            "msUserSelect": "none",
+            "muiPrepared": true,
+            "position": "absolute",
+            "top": 0,
+            "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
+            "userSelect": "none",
+            "width": 24,
+          }
+        }>
+        golf_course
+      </span>
+      <div
+        style={
+          Object {
+            "muiPrepared": true,
+          }
+        }>
+        第66期王将戦挑戦者決定リーグ戦/角換わり腰掛銀
+      </div>
+    </div>
+  </div>
+  <hr
+    style={
+      Object {
+        "backgroundColor": "#e0e0e0",
+        "border": "none",
+        "height": 1,
+        "margin": 0,
+        "marginLeft": 72,
+        "marginTop": -1,
+        "muiPrepared": true,
+      }
+    } />
+  <div>
+    <div
+      open={null}
+      style={
+        Object {
+          "WebkitTransition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
+          "backgroundColor": null,
+          "color": "rgba(0, 0, 0, 0.87)",
+          "display": "block",
+          "fontSize": 16,
+          "lineHeight": "16px",
+          "marginLeft": 0,
+          "muiPrepared": true,
+          "paddingBottom": 16,
+          "paddingLeft": 72,
+          "paddingRight": 16,
+          "paddingTop": 20,
+          "position": "relative",
+          "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
+        }
+      }>
+      <div
+        className={undefined}
+        size={30}
+        style={
+          Object {
+            "MozUserSelect": "none",
+            "WebkitAlignItems": "center",
+            "WebkitBoxAlign": "center",
+            "WebkitBoxPack": "center",
+            "WebkitJustifyContent": "center",
+            "WebkitUserSelect": "none",
+            "alignItems": "center",
+            "backgroundColor": "rgb(188, 188, 188)",
+            "borderRadius": "50%",
+            "color": "#ffffff",
+            "display": Array [
+              "-webkit-box",
+              "-moz-box",
+              "-ms-inline-flexbox",
+              "-webkit-inline-flex",
+              "inline-flex",
+            ],
+            "fontSize": 15,
+            "height": 30,
+            "justifyContent": "center",
+            "left": 16,
+            "msFlexAlign": "center",
+            "msFlexPack": "center",
+            "msUserSelect": "none",
+            "muiPrepared": true,
+            "position": "absolute",
+            "top": 16,
+            "userSelect": "none",
+            "width": 30,
+          }
+        }>
+        先
+      </div>
+      <div
+        style={
+          Object {
+            "muiPrepared": true,
+          }
+        }>
+        糸谷哲郎八段
+      </div>
+      <div
+        style={
+          Object {
+            "WebkitBoxOrient": null,
+            "WebkitLineClamp": null,
+            "color": "rgba(0, 0, 0, 0.54)",
+            "display": null,
+            "fontSize": 14,
+            "height": 16,
+            "lineHeight": "16px",
+            "margin": 0,
+            "marginTop": 4,
+            "muiPrepared": true,
+            "overflow": "hidden",
+            "textOverflow": "ellipsis",
+            "whiteSpace": "nowrap",
+          }
+        }>
+        (残り時間)
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      open={null}
+      style={
+        Object {
+          "WebkitTransition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
+          "backgroundColor": null,
+          "color": "rgba(0, 0, 0, 0.87)",
+          "display": "block",
+          "fontSize": 16,
+          "lineHeight": "16px",
+          "marginLeft": 0,
+          "muiPrepared": true,
+          "paddingBottom": 16,
+          "paddingLeft": 72,
+          "paddingRight": 16,
+          "paddingTop": 20,
+          "position": "relative",
+          "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
+        }
+      }>
+      <div
+        className={undefined}
+        size={30}
+        style={
+          Object {
+            "MozUserSelect": "none",
+            "WebkitAlignItems": "center",
+            "WebkitBoxAlign": "center",
+            "WebkitBoxPack": "center",
+            "WebkitJustifyContent": "center",
+            "WebkitUserSelect": "none",
+            "alignItems": "center",
+            "backgroundColor": "rgb(188, 188, 188)",
+            "borderRadius": "50%",
+            "color": "#ffffff",
+            "display": Array [
+              "-webkit-box",
+              "-moz-box",
+              "-ms-inline-flexbox",
+              "-webkit-inline-flex",
+              "inline-flex",
+            ],
+            "fontSize": 15,
+            "height": 30,
+            "justifyContent": "center",
+            "left": 16,
+            "msFlexAlign": "center",
+            "msFlexPack": "center",
+            "msUserSelect": "none",
+            "muiPrepared": true,
+            "position": "absolute",
+            "top": 16,
+            "userSelect": "none",
+            "width": 30,
+          }
+        }>
+        後
+      </div>
+      <div
+        style={
+          Object {
+            "muiPrepared": true,
+          }
+        }>
+        深浦康市九段
+      </div>
+      <div
+        style={
+          Object {
+            "WebkitBoxOrient": null,
+            "WebkitLineClamp": null,
+            "color": "rgba(0, 0, 0, 0.54)",
+            "display": null,
+            "fontSize": 14,
+            "height": 16,
+            "lineHeight": "16px",
+            "margin": 0,
+            "marginTop": 4,
+            "muiPrepared": true,
+            "overflow": "hidden",
+            "textOverflow": "ellipsis",
+            "whiteSpace": "nowrap",
+          }
+        }>
+        (残り時間)
+      </div>
+    </div>
+  </div>
+</div>
+`;

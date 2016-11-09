@@ -2,7 +2,21 @@
 import React from "react"
 import type { Style } from "../../types"
 
-export class Cell extends React.Component {
+type CellProps = {
+  piece: ?string,
+  highlight?: boolean,
+  count?: number,
+  style?: Style,
+  scale?: number
+}
+export const Cell = ({piece, highlight = false, count = 1, style = {}, scale = 1}: CellProps) => (
+  <div style={{...getOuterStyle(scale), ...style}}>
+    <span style={getCellStyle({piece, highlight, scale})}></span>
+    {count > 1 ? <Count {...{count, scale}} /> : null}
+  </div>
+)
+
+export class _Cell extends React.Component {
   props: {
     piece: ?string,
     highlight: boolean,

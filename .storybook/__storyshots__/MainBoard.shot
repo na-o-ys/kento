@@ -1,0 +1,3241 @@
+exports[`initial`] = `
+<div
+  style={
+    Object {
+      "background": "url(\'img/masu_dot_xy.png\'), url(\'img/ban_kaya_a.png\')",
+      "backgroundRepeat": "no-repeat",
+      "backgroundSize": "100%",
+      "height": 432,
+      "padding": 11,
+      "width": 388,
+    }
+  }>
+  <div
+    style={Object {}}>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Gkyo.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Gkei.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Ggin.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Gkin.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Gou.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Gkin.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Ggin.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Gkei.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Gkyo.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+  </div>
+  <div
+    style={Object {}}>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Ghi.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Gkaku.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+  </div>
+  <div
+    style={Object {}}>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Gfu.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Gfu.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Gfu.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Gfu.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Gfu.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Gfu.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Gfu.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Gfu.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Gfu.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+  </div>
+  <div
+    style={Object {}}>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+  </div>
+  <div
+    style={Object {}}>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+  </div>
+  <div
+    style={Object {}}>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+  </div>
+  <div
+    style={Object {}}>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Sfu.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Sfu.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Sfu.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Sfu.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Sfu.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Sfu.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Sfu.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Sfu.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Sfu.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+  </div>
+  <div
+    style={Object {}}>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Skaku.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Shi.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+  </div>
+  <div
+    style={Object {}}>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Skyo.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Skei.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Sgin.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Skin.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Sou.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Skin.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Sgin.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Skei.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 48,
+          "position": "relative",
+          "width": 43,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Skyo.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 48,
+            "width": 43,
+          }
+        } />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`small`] = `
+<div
+  style={
+    Object {
+      "background": "url(\'img/masu_dot_xy.png\'), url(\'img/ban_kaya_a.png\')",
+      "backgroundRepeat": "no-repeat",
+      "backgroundSize": "100%",
+      "height": 302.4,
+      "padding": 7.699999999999999,
+      "width": 271.59999999999997,
+    }
+  }>
+  <div
+    style={Object {}}>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Gkyo.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Gkei.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Ggin.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Gkin.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Gou.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Gkin.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Ggin.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Gkei.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Gkyo.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+  </div>
+  <div
+    style={Object {}}>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Ghi.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Gkaku.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+  </div>
+  <div
+    style={Object {}}>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Gfu.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Gfu.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Gfu.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Gfu.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Gfu.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Gfu.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Gfu.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Gfu.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Gfu.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+  </div>
+  <div
+    style={Object {}}>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+  </div>
+  <div
+    style={Object {}}>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+  </div>
+  <div
+    style={Object {}}>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+  </div>
+  <div
+    style={Object {}}>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Sfu.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Sfu.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Sfu.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Sfu.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Sfu.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Sfu.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Sfu.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Sfu.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Sfu.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+  </div>
+  <div
+    style={Object {}}>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Skaku.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Shi.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+  </div>
+  <div
+    style={Object {}}>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Skyo.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Skei.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Sgin.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Skin.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Sou.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Skin.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Sgin.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Skei.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "height": 33.599999999999994,
+          "position": "relative",
+          "width": 30.099999999999998,
+        }
+      }>
+      <span
+        style={
+          Object {
+            "backgroundImage": "url(img/koma/Skyo.png)",
+            "backgroundSize": "100%",
+            "display": "block",
+            "height": 33.599999999999994,
+            "width": 30.099999999999998,
+          }
+        } />
+    </div>
+  </div>
+</div>
+`;

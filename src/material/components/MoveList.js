@@ -4,8 +4,7 @@ import ReactDOM from "react-dom"
 import Drawer from "material-ui/Drawer"
 import { List, ListItem } from "material-ui/List"
 import { MenuItem } from "material-ui/Menu"
-import SelectableList from "./SelectableList"
-import {grey400, darkBlack, lightBlack} from 'material-ui/styles/colors'
+import {faintBlack, darkBlack, lightBlack} from 'material-ui/styles/colors'
 import type { Game } from "../lib/game"
 import type { GameControl } from "../types"
 import type { TimeFormat } from "json-kifu-format"
@@ -15,10 +14,6 @@ export class MoveList extends React.Component {
     game: Game,
     turn: number,
     control: GameControl
-  }
-
-  handleChange(turn: number) {
-    this.props.control.setTurn(turn)
   }
 
   scrollToCurrentTurn(animate: boolean = false) {
@@ -38,32 +33,62 @@ export class MoveList extends React.Component {
     ), 0)
   }
 
-  usedTimeFormat(turn: number) { return this.props.game.getTime(turn).now.m }
+  handleTouchTap(turn: number) {
+    this.props.control.setTurn(turn)
+  }
 
   render() {
+    const { game, turn } = this.props
     return (
       <Drawer openSecondary={true} width={200}>
-        <SelectableList value={this.props.turn}>
-          {this.props.game.jpKifu.map((kifuTxt, idx) => (
-            <ListItem
-              key={idx}
-              value={idx}
-              onClick={() => this.handleChange(idx)}
-              primaryText={
-                <span>
-                  <small style={{color: lightBlack}}>
-                    {idx}.
-                  </small>
-                  &nbsp;{kifuTxt}&nbsp;
-                  <small style={{color: lightBlack}}>
-                    {this.usedTimeFormat(idx)}
-                  </small>
-                </span>
-              }
-            />
-          ))}
-        </SelectableList>
+        {game.jpKifu.map((entry, idx) => (
+          <MoveEntry
+            key={idx}
+            turn={idx}
+            kifuTxt={entry}
+            usedTime={game.getTime(idx)}
+            selected={idx == turn}
+            onTouchTap={this.handleTouchTap.bind(this)}
+          />
+        ))}
       </Drawer>
+    )
+  }
+}
+
+class MoveEntry extends React.Component {
+  props: {
+    turn: number,
+    kifuTxt: string,
+    selected: boolean,
+    usedTime: { now: TimeFormat, total: TimeFormat },
+    onTouchTap: (turn: number) => void
+  }
+  static defaultProps = {
+    selected: false,
+    onTouchTap: _ => {}
+  }
+
+  usedTimeFormat() { return this.props.usedTime.now.m }
+
+  render() {
+    const { turn, kifuTxt, onTouchTap, selected } = this.props
+    return (
+      <MenuItem
+        primaryText={
+          <span>
+            <small style={{color: lightBlack}}>{turn}.</small>
+            &nbsp;{kifuTxt}&nbsp;
+          </span>
+        }
+        secondaryText={
+          <small style={{color: lightBlack}}>
+            {this.usedTimeFormat()}
+          </small>
+        }
+        style={selected ? { backgroundColor: faintBlack } : {}}
+        onTouchTap={() => onTouchTap(turn)}
+      />
     )
   }
 }
