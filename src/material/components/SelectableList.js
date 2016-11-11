@@ -20,7 +20,7 @@ function wrapState(ComposedComponent) {
       })
     }
 
-    handleRequestChange = (_: any, index: number) => {
+    handleRequestChange = (_: Event, index: number) => {
       this.setState({
         selectedIndex: index
       })
