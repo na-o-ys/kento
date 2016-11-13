@@ -1,8 +1,9 @@
 // @flow
 import React from "react"
 import ReactDOM from "react-dom"
-import { createStore } from "redux"
+import { createStore, applyMiddleware } from "redux"
 import { Provider } from "react-redux"
+import thunkMiddleware from 'redux-thunk'
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider"
 import RaisedButton from "material-ui/RaisedButton"
 import Paper from "material-ui/Paper"
@@ -12,6 +13,7 @@ import { setGame } from "./actions"
 import type { Game } from "./lib/game"
 import type { Store } from "redux"
 import type { State } from "./container/KentoApp"
+import { setTurn } from "./actions"
 
 const App = ({store}) => (
   <Provider store={store}>
@@ -40,8 +42,12 @@ export function registerGame(subscribe: (x: GameListener) => void, turn: number)
 function initializeRender(game: Game, turn: number) {
   let store = createStore(
     reducers,
-    { game, turn, turnsRead: game.maxTurn }
+    { game, turn, turnsRead: game.maxTurn },
+    applyMiddleware(
+      thunkMiddleware // lets us dispatch() functions
+    )
   )
+  setKeyListener(store)
   ReactDOM.render(
     <App store={store} />,
     document.getElementById("main")
@@ -62,3 +68,17 @@ const SampleComponent = () => (
 // const Board = () => (
 //   <Paper style={style} zDepth={1} />
 // )
+
+
+function setKeyListener(store) {
+  document.addEventListener('keydown', (e: KeyboardEvent) => {
+    const { turn } = store.getState()
+    const { maxTurn } = store.getState().game
+    if (e.keyCode == 37) {
+      store.dispatch(setTurn(Math.max(turn - 1, 0)))
+    }
+    if (e.keyCode == 39) {
+      store.dispatch(setTurn(Math.min(turn + 1, maxTurn)))
+    }
+  })
+}

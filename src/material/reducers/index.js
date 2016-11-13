@@ -1,6 +1,6 @@
 // @flow
 import { combineReducers } from "redux"
-import { SET_GAME, SET_TURN } from "../actions"
+import { SET_GAME, SET_TURN, KENTO, RECEIVE_KENTO_RESULT } from "../actions"
 import { Game, emptyGame } from "../lib/game"
 import type { Action } from "../actions"
 
@@ -32,4 +32,22 @@ function turnsRead(state: number = 0, action): number {
   }
 }
 
-export const reducers = combineReducers({ game, turn, turnsRead })
+function showKento(state: boolean = false, action): boolean {
+  switch (action.type) {
+    case KENTO:
+      return true
+    default:
+      return state
+  }
+}
+
+function kentoResult(state: string = "", action): string {
+  switch (action.type) {
+    case RECEIVE_KENTO_RESULT:
+      return action.RECEIVE_KENTO_RESULT
+    default:
+      return state
+  }
+}
+
+export const reducers = combineReducers({ game, turn, turnsRead, showKento })

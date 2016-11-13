@@ -5,12 +5,15 @@ import Board from "./Board"
 import Header from "./Header"
 import { MoveList } from "./MoveList"
 import Comment from "./Comment"
+import KentoButton from "./KentoButton"
+import KentoDialog from "./KentoDialog"
 import type { GameControl } from "../types"
 import type { Game } from "../lib/game"
 
-export const Kento = ({game, turn, control}: { game: Game, turn: number, control: GameControl }) => {
+export const Kento = ({game, turn, control, showKento, result}: { game: Game, turn: number, control: GameControl, showKento: boolean, result: any }) => {
   const position = game.getPosition(turn)
   const comments = game.getComments(turn)
+  // console.log(game.getSfen(turn))
   return (
     <div className="row">
       <div className="col-sm-3">
@@ -20,6 +23,7 @@ export const Kento = ({game, turn, control}: { game: Game, turn: number, control
         <Paper style={{padding: 10, margin: 10}}>
           <Comment comments={comments} />
         </Paper>
+        <KentoButton onClick={() => control.kento(game, turn)} />
       </div>
       <div className="col-sm-6">
         <Paper style={{display: 'inline-block'}} zDepth={2} >
