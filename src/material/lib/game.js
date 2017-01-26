@@ -1,5 +1,6 @@
 // @flow
 import JKFPlayer from "json-kifu-format"
+import type { MoveFormat, PlaceFormat } from "json-kifu-format"
 
 export type Hand = {
   K: number,
@@ -27,7 +28,7 @@ export class Game {
   }
 
   static parseText(text): Game {
-    return new Game(JKFPlayer.parseKIF(text))
+    return new Game(JKFPlayer.parse(text))
   }
 
   get maxTurn(): number {
@@ -59,6 +60,10 @@ export class Game {
       white_hand[pieceKindMap[kind]] = state.hands[1][kind]
     }
     return { cells, black_hand, white_hand, movedCell }
+  }
+
+  getSfen(turn: number): string {
+    return this.player.kifu.moves.slice(1, turn + 1).map(toSfenString).join(" ")
   }
 
   getTime(turn: number) {
@@ -117,6 +122,29 @@ function zeroHand(): Hand {
     L: 0,
     P: 0
   }
+}
+
+
+function toSfenString(move: MoveFormat): string {
+  if (!move.move) return ""
+  let fromTxt = "", toTxt = ""
+  if (move.move.from) {
+    // 移動
+    fromTxt = placeToSfen(move.move.from)
+  } else {
+    // 打ち
+    fromTxt = pieceKindMap[move.move.piece] + "*"
+  }
+  if (move.move && move.move.to) {
+    toTxt = placeToSfen(move.move.to)
+    if (move.move && move.move.promote) toTxt += "+"
+  }
+
+  return fromTxt + toTxt
+}
+
+function placeToSfen(place: PlaceFormat): string {
+  return place.x.toString() + String.fromCharCode(96 + place.y)
 }
 
 export default Game
