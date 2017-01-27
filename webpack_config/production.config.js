@@ -2,19 +2,14 @@ const webpack = require('webpack')
 const path = require('path')
 
 const project_root = path.resolve("./")
-const javascripts_root = project_root + "/src/javascripts"
+const javascripts_root = project_root + "/src/material"
 
 module.exports = {
   context: javascripts_root,
   entry: ["babel-polyfill", "./index.js"],
   output: {
     path: project_root + "/dist/javascripts",
-    filename: "./kento_client.min.js"
-  },
-  resolve: {
-    root: [
-      javascripts_root
-    ]
+    filename: "./kento_mt.min.js"
   },
   module: {
     loaders: [

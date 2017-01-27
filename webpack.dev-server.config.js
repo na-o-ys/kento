@@ -8,10 +8,10 @@ const config = {
   entry: [
     'webpack/hot/dev-server',
     'webpack/hot/only-dev-server',
-    path.join(__dirname, '/src/material/index.js'),
+    path.join(__dirname, '/src/index.js'),
   ],
   devServer: {
-    contentBase: 'sample/mt',
+    contentBase: 'sample',
     devtool: 'eval',
     hot: true,
     inline: true,
@@ -30,7 +30,7 @@ const config = {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
     new TransferWebpackPlugin([
-      {from: 'mt'},
+      {from: '.'},
     ], path.resolve(__dirname, 'sample')),
   ],
   module: {
