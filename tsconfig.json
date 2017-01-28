@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "target": "es5",
+        "lib": [
+            "dom",
+            "es2017"
+        ],
+        "rootDir": "src",
+        "outDir": "build",
+        "sourceMap": true,
+        "pretty": true,
+        "jsx": "react",
+        "allowJs": true
+    }
+}

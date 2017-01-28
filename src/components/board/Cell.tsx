@@ -1,9 +1,8 @@
-// @flow
-import React from "react"
-import type { Style } from "../../types"
+import * as React from "react"
+import { Style } from "../../types"
 
 type CellProps = {
-  piece: ?string,
+  piece?: string,
   highlight?: boolean,
   count?: number,
   style?: Style,

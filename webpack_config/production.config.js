@@ -2,7 +2,7 @@ const webpack = require('webpack')
 const path = require('path')
 
 const project_root = path.resolve("./")
-const javascripts_root = project_root + "/src/material"
+const javascripts_root = project_root + "/src"
 
 module.exports = {
   context: javascripts_root,
