@@ -57,7 +57,7 @@
     "axios": "^0.9.1",
     "doc-ready": "^1.0.3",
     "js-cookie": "^2.1.0",
-    "json-kifu-format": "^1.0.4",
+    "json-kifu-format": "^1.1.0",
     "material-ui": "^0.16.7",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",

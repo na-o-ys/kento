@@ -33,13 +33,22 @@ const config = {
       {from: '.'},
     ], path.resolve(__dirname, 'sample')),
   ],
+  resolve: {
+    extensions: ["", ".ts", ".tsx", ".js"]
+    // extensions: ["", ".js"]
+  },
   module: {
     loaders: [
       {
         test: /\.js$/,
         loaders: ['react-hot-loader/webpack', 'babel-loader'],
-        exclude: [nodeModulesPath],
+        exclude: [/node_modules/],
       },
+      {
+        test: /\.ts(x)?$/,
+        loaders: ["react-hot-loader/webpack", "ts-loader"],
+        exclude: [/node_modules/]
+      }
     ],
   },
 }

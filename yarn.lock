@@ -3327,7 +3327,7 @@ jsesc@~0.5.0:
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/jsesc/-/jsesc-0.5.0.tgz#e7dee66e35d6fc16f710fe91d5cf69f70f08911d"
 
-json-kifu-format@^1.0.4:
+json-kifu-format@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/json-kifu-format/-/json-kifu-format-1.1.0.tgz#cb95776f305cffb0f0f8ec3fac04afade4f77eec"
   dependencies:

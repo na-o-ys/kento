@@ -1,6 +1,5 @@
-// @flow
-import JKFPlayer from "json-kifu-format"
-import type { MoveFormat, PlaceFormat } from "json-kifu-format"
+import JKFPlayer = require("json-kifu-format")
+import { JsonKifuFormat } from "../types"
 
 export type Hand = {
   K: number,
@@ -14,7 +13,7 @@ export type Hand = {
 }
 
 export type Position = {
-  cells: Array<?Piece>,
+  cells: Array<Piece | null>,
   black_hand: Hand,
   white_hand: Hand,
   movedCell: number
@@ -45,7 +44,7 @@ export class Game {
     let state = this.player.getState()
     let move = this.player.getMove()
     let movedCell = (move && move.to) ? 9 * (move.to.y - 1) + 9 - move.to.x : -1
-    let cells: Array<?Piece> = []
+    let cells: Array<Piece | null> = []
     for (let r = 0; r < 9; r++) for (let f = 0; f < 9; f++) {
       let { color, kind } = state.board[8 - f][r]
       if (color !== null && color !== undefined && kind) {
@@ -125,7 +124,7 @@ function zeroHand(): Hand {
 }
 
 
-function toSfenString(move: MoveFormat): string {
+function toSfenString(move: JsonKifuFormat.MoveFormat): string {
   if (!move.move) return ""
   let fromTxt = "", toTxt = ""
   if (move.move.from) {
@@ -143,7 +142,7 @@ function toSfenString(move: MoveFormat): string {
   return fromTxt + toTxt
 }
 
-function placeToSfen(place: PlaceFormat): string {
+function placeToSfen(place: JsonKifuFormat.PlaceFormat): string {
   return place.x.toString() + String.fromCharCode(96 + place.y)
 }
 

@@ -1,18 +1,17 @@
-// @flow
-import React from "react"
+import * as React from "react"
 import Cell from "./Cell"
-import type { Style } from "../../types"
+import { Style } from "../../types"
 
 type Hands = { [key: string]: number }
 
-type HandProps = {
+type VHandProps = {
   hands: Hands,
   color: string,
   style?: Style,
   scale?: number
 }
 
-export const Hand = ({hands, color, style = {}, scale = 1}: HandProps) => {
+export const VHand = ({hands, color, style = {}, scale = 1}: VHandProps) => {
   const pieces = pieceDisplayOrder[color]
     .filter(piece => hands[piece] > 0)
     .map(piece => ({
@@ -22,19 +21,24 @@ export const Hand = ({hands, color, style = {}, scale = 1}: HandProps) => {
   return (
     <div style={{...getHandStyle(scale), ...style}}>
       {pieces.map(hand => (
-        <Cell key={hand.piece} piece={hand.piece} count={hand.count} scale={scale} />
+        <Cell key={hand.piece} piece={hand.piece} count={hand.count} scale={scale} style={getCellStyle(color)} />
       ))}
     </div>
   )
 }
 
-export default Hand
+export default VHand
 
 const getHandStyle = (scale: number) => ({
-  width:  scale * (43 + 2),
-  height: scale * 454,
+  width:  scale * 390,
+  height: scale * 48,
   background: "url('img/ban_dark.png')",
-  backgroundRepeat: "no-repeat"
+  paddingLeft: scale * 10,
+  paddingRight: scale * 10
+})
+
+const getCellStyle = (color: string) => ({
+  float: color == "black" ? "left" : "right"
 })
 
 const pieceDisplayOrder = {

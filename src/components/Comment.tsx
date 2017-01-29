@@ -1,5 +1,4 @@
-// @flow
-import React from "react"
+import * as React from "react"
 
 export const Comment = ({ comments }: { comments: string[]}) => (
   <div className="comment">

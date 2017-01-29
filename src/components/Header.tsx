@@ -1,10 +1,9 @@
-// @flow
-import React from "react"
+import * as React from "react"
 import { List, ListItem } from "material-ui/List"
 import Divider from "material-ui/Divider"
 import FontIcon from "material-ui/FontIcon"
 import Avatar from "material-ui/Avatar"
-import type { Game } from "../lib/game"
+import { Game } from "../lib/game"
 
 const iconStyle = {
   marginRight: 12

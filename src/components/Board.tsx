@@ -1,10 +1,9 @@
-// @flow
-import React from "react"
+import * as React from "react"
 import MainBoard from "./board/MainBoard"
 import Hand from "./board/Hand"
 import VHand from "./board/VHand"
-import type { Position } from "../lib/game"
-import type { Style } from "../types"
+import { Position } from "../lib/game"
+import { Style } from "../types"
 
 type BoardProps = {
   position: Position,

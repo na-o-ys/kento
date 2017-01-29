@@ -1,18 +1,27 @@
-export interface GameControl {
-  setTurn(turn: number): void
-}
+declare module "json-kifu-format" {
+  export = JKFPlayer
 
-export type Style = { [key: string]: string | number }
+  class JKFPlayer {
+    kifu: JSONKifuFormat;
+    static parseKIF(kif: string): JKFPlayer;
+    static parse(kif: string): JKFPlayer
 
-export namespace JsonKifuFormat {
-  export type Color = boolean;
+    getReadableKifuState(): {kifu:string; forks:string[]}[];
+    getMaxTesuu(): number;
+    goto(tesuu: number): void;
+    getState(): StateFormat;
+    getMove(): MoveMoveFormat;
+    getComments(tesuu: number): string[];
+  }
 
-  export interface PlaceFormat{
+  type Color = boolean;
+
+  interface PlaceFormat{
     x: number;
     y: number;
   }
 
-  export interface MoveFormat{
+  interface MoveFormat{
     comments?: string[];
     move?: MoveMoveFormat;
     time?: {
@@ -23,7 +32,7 @@ export namespace JsonKifuFormat {
     forks?: MoveFormat[][];
   }
 
-  export interface TimeFormat{
+  interface TimeFormat{
     h?: number;
     m: number;
     s: number;

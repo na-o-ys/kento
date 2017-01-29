@@ -1,10 +1,9 @@
-// @flow
-import React from "react"
+import * as React from "react"
 import Cell from "./Cell"
-import type { Style } from "../../types"
+import { Style } from "../../types"
 
 type MainBoardProps = {
-  cells: Array<?string>,
+  cells: Array<string | null>,
   highlightCell?: number,
   style?: Style,
   scale?: number

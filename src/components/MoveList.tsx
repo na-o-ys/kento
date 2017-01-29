@@ -1,12 +1,11 @@
-// @flow
-import React from "react"
+import * as React from "react"
 import ReactDOM from "react-dom"
 import Drawer from "material-ui/Drawer"
 import { List, ListItem } from "material-ui/List"
 import { MenuItem } from "material-ui/Menu"
 import {faintBlack, darkBlack, lightBlack} from 'material-ui/styles/colors'
-import type { Game } from "../lib/game"
-import type { TimeFormat } from "json-kifu-format"
+import { Game } from "../lib/game"
+import { JsonKifuFormat } from "../types"
 
 type MoveListProps = {
   game: Game,
@@ -32,7 +31,7 @@ export const MoveList = ({game, turn, onSelectTurn}: MoveListProps) => (
 type MoveEntryProps = {
   turn: number,
   kifuTxt: string,
-  usedTime: { now: TimeFormat, total: TimeFormat },
+  usedTime: { now: JsonKifuFormat.TimeFormat, total: JsonKifuFormat.TimeFormat },
   onTouchTap: (turn: number) => void,
   selected?: boolean
 }
