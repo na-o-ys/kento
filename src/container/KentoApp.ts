@@ -3,6 +3,7 @@ import { Kento } from "../components/Kento"
 import { setTurn } from "../actions"
 import { Dispatch } from "redux"
 import { Game } from "../lib/game"
+import * as Perf from "react-addons-perf"
 
 export type State = {
   game: Game,

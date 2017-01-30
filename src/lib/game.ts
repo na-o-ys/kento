@@ -20,9 +20,12 @@ export type Position = {
 
 export class Game {
   player: JKFPlayer
+  positions: Position[]
   _jpKifu: string[]
   constructor(player: JKFPlayer) {
     this.player = player
+    this.positions = Array.from(Array(this.maxTurn).keys())
+      .map(turn => this.calculatePosition(turn))
   }
 
   static parseText(text): Game {
@@ -39,6 +42,28 @@ export class Game {
   }
 
   getPosition(turn: number): Position {
+    return this.positions[turn]
+  }
+
+  getSfen(turn: number): string {
+    return this.player.kifu.moves.slice(1, turn + 1).map(toSfenString).join(" ")
+  }
+
+  getTime(turn: number) {
+    const move = this.player.kifu.moves[turn]
+    if (move && move.time) return move.time
+    return { now: { m: 0, s: 0 }, total: { h: 0, m: 0, s: 0 }}
+  }
+
+  getComments(turn: number) {
+    return this.player.getComments(turn)
+  }
+
+  getHeader() {
+    return this.player.kifu.header
+  }
+  
+  private calculatePosition(turn: number): Position {
     this.player.goto(turn)
     let state = this.player.getState()
     let move = this.player.getMove()
@@ -58,24 +83,6 @@ export class Game {
       white_hand[pieceKindMap[kind]] = state.hands[1][kind]
     }
     return { cells, black_hand, white_hand, movedCell }
-  }
-
-  getSfen(turn: number): string {
-    return this.player.kifu.moves.slice(1, turn + 1).map(toSfenString).join(" ")
-  }
-
-  getTime(turn: number) {
-    const move = this.player.kifu.moves[turn]
-    if (move && move.time) return move.time
-    return { now: { m: 0, s: 0 }, total: { h: 0, m: 0, s: 0 }}
-  }
-
-  getComments(turn: number) {
-    return this.player.getComments(turn)
-  }
-
-  getHeader() {
-    return this.player.kifu.header
   }
 }
 
