@@ -10,6 +10,13 @@ import { Game } from "../lib/game"
 export const Kento = ({game, turn, control}: { game: Game, turn: number, control: GameControl }) => {
   const position = game.getPosition(turn)
   const comments = game.getComments(turn)
+  const onClickBoard = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (e.clientX - e.currentTarget.offsetLeft < e.currentTarget.offsetWidth / 2) {
+      control.setTurn(turn - 1)
+    } else {
+      control.setTurn(turn + 1)
+    }
+  }
   return (
     <div className="row">
       <div className="col-sm-3">
@@ -20,8 +27,8 @@ export const Kento = ({game, turn, control}: { game: Game, turn: number, control
           <Comment comments={comments} />
         </Paper>
       </div>
-      <div className="col-sm-6">
-        <Paper style={{display: 'inline-block'}} zDepth={2} >
+      <div className="col-sm-6" onClick={onClickBoard}>
+        <Paper style={{display: 'inline-block'}} zDepth={2}>
           <Board position={position} />
         </Paper>
       </div>
