@@ -4,7 +4,7 @@ import { storiesOf, action } from '@kadira/storybook'
 import MoveList from './MoveList'
 import { sample as game } from "../lib/game/sample"
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
-import injectTapEventPlugin from "react-tap-event-plugin"
+import injectTapEventPlugin from 'react-tap-event-plugin'
 
 injectTapEventPlugin()
 
