@@ -1,5 +1,4 @@
 import JKFPlayer = require("json-kifu-format")
-import { JsonKifuFormat } from "../types"
 
 export type Hand = {
   K: number,
@@ -124,7 +123,7 @@ function zeroHand(): Hand {
 }
 
 
-function toSfenString(move: JsonKifuFormat.MoveFormat): string {
+function toSfenString(move: JKFPlayer.MoveFormat): string {
   if (!move.move) return ""
   let fromTxt = "", toTxt = ""
   if (move.move.from) {
@@ -142,7 +141,7 @@ function toSfenString(move: JsonKifuFormat.MoveFormat): string {
   return fromTxt + toTxt
 }
 
-function placeToSfen(place: JsonKifuFormat.PlaceFormat): string {
+function placeToSfen(place: JKFPlayer.PlaceFormat): string {
   return place.x.toString() + String.fromCharCode(96 + place.y)
 }
 

@@ -8,7 +8,7 @@ const config = {
   entry: [
     'webpack/hot/dev-server',
     'webpack/hot/only-dev-server',
-    path.join(__dirname, '/src/index.js'),
+    path.join(__dirname, '/src'),
   ],
   devServer: {
     contentBase: 'sample',
@@ -35,19 +35,18 @@ const config = {
   ],
   resolve: {
     extensions: ["", ".ts", ".tsx", ".js"]
-    // extensions: ["", ".js"]
   },
   module: {
     loaders: [
       {
         test: /\.js$/,
-        loaders: ['react-hot-loader/webpack', 'babel-loader'],
         exclude: [/node_modules/],
+        loaders: ['react-hot-loader/webpack', 'babel-loader'],
       },
       {
         test: /\.ts(x)?$/,
+        exclude: [/node_modules/],
         loaders: ["react-hot-loader/webpack", "ts-loader"],
-        exclude: [/node_modules/]
       }
     ],
   },
