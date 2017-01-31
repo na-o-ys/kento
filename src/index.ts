@@ -4,6 +4,9 @@ import axios from "axios"
 import { startGame, registerGame } from "./App"
 import Game from "./lib/game"
 
+import Perf = require('react-addons-perf')
+window['Perf'] = Perf
+
 // Needed for onTouchTap
 // http://stackoverflow.com/a/34015469/988941
 injectTapEventPlugin()

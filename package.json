@@ -45,6 +45,7 @@
     "storyshots": "^3.2.1",
     "transfer-webpack-plugin": "^0.1.4",
     "ts-loader": "^2.0.0",
+    "typescript": "^2.1.5",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2"
   },
@@ -52,6 +53,7 @@
     "@types/react": "^15.0.4",
     "@types/react-dom": "^0.14.21",
     "@types/react-redux": "^4.4.36",
+    "@types/react-tap-event-plugin": "^0.0.30",
     "@types/redux": "^3.6.0",
     "axios": "^0.9.1",
     "doc-ready": "^1.0.3",
