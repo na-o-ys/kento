@@ -21,9 +21,15 @@ function start(game: Game, turn: number, { setDocumentTitle }: Callbacks = defau
     { game, turn, turnsRead: game.maxTurn }
   )
   setKeyListener(store)
+  gTurn = turn
+  gMaxTurn = game.maxTurn
   store.subscribe(() => {
     const { game, turnsRead } = store.getState()
     if (setDocumentTitle) setDocumentTitle(game, game.maxTurn - turnsRead)
+    const { turn } = store.getState()
+    const { maxTurn } = store.getState().game
+    gTurn = turn
+    gMaxTurn = maxTurn
   })
 
   render(
@@ -38,15 +44,16 @@ function start(game: Game, turn: number, { setDocumentTitle }: Callbacks = defau
   }
 }
 
+let gTurn
+let gMaxTurn
+
 function setKeyListener(store) {
   document.addEventListener('keydown', (e: KeyboardEvent) => {
-    const { turn } = store.getState()
-    const { maxTurn } = store.getState().game
     if (e.keyCode == 37) {
-      store.dispatch(setTurn(Math.max(turn - 1, 0)))
+      store.dispatch(setTurn(Math.max(gTurn - 1, 0)))
     }
     if (e.keyCode == 39) {
-      store.dispatch(setTurn(Math.min(turn + 1, maxTurn)))
+      store.dispatch(setTurn(Math.min(gTurn + 1, gMaxTurn)))
     }
   })
 }
