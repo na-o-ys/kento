@@ -34,7 +34,7 @@ const config = {
     ], path.resolve(__dirname, 'sample')),
   ],
   resolve: {
-    extensions: ["", ".ts", ".tsx", ".js"]
+    extensions: [".ts", ".tsx", ".js"]
   },
   module: {
     loaders: [

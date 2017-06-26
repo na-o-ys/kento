@@ -62,7 +62,7 @@ const mainBoardStyle = {
   float: "left"
 }
 
-const handWrapperStyle = scale => ({
+const handWrapperStyle: (number) => React.CSSProperties = scale => ({
   position: "relative",
   float: "left",
   height: scale * 454,

@@ -18,7 +18,7 @@ export const Cell = ({piece, highlight = false, count = 1, style = {}, scale = 1
 
 export default Cell
 
-const getOuterStyle = scale => ({
+const getOuterStyle: (number) => React.CSSProperties = scale => ({
   position: "relative",
   ...cellSize(scale)
 })
@@ -27,7 +27,7 @@ const Count = ({count, scale}) => (
   <span style={getCountStyle(scale)}>{count}</span>
 )
 
-const getCountStyle = scale => ({
+const getCountStyle: (number) => React.CSSProperties = scale => ({
   position: "absolute",
   top: 0,
   right: scale * 43 / 16,
