@@ -6,24 +6,24 @@ import { Game } from "../lib/game"
 import * as Perf from "react-addons-perf"
 
 export type State = {
-  game: Game,
-  turn: number,
-  turnsRead: number
+    game: Game,
+    turn: number,
+    turnsRead: number
 }
 
 function mapStateToProps(state: State) {
-  return {
-    game: state.game,
-    turn: state.turn
-  }
+    return {
+        game: state.game,
+        turn: state.turn
+    }
 }
 
 function mapDispatchToProps(dispatch: Dispatch<any>) {
-  return {
-    control: {
-      setTurn(turn) { dispatch(setTurn(turn)) }
+    return {
+        control: {
+            setTurn(turn) { dispatch(setTurn(turn)) }
+        }
     }
-  }
 }
 
 const KentoApp = connect(mapStateToProps, mapDispatchToProps)(Kento)

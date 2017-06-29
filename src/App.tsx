@@ -12,44 +12,44 @@ import { Game } from "./lib/game"
 import { Store } from "redux"
 import { State } from "./container/KentoApp"
 
-const App = ({store}) => (
-  <Provider store={store}>
-    <MuiThemeProvider>
-      <KentoApp />
-    </MuiThemeProvider>
-  </Provider>
+const App = ({ store }) => (
+    <Provider store={store}>
+        <MuiThemeProvider>
+            <KentoApp />
+        </MuiThemeProvider>
+    </Provider>
 )
 
 export function startGame(game: Game, turn: number) {
-  return initializeRender(game, turn)
+    return initializeRender(game, turn)
 }
 
 type GameListener = (game: Game) => void
 export function registerGame(subscribe: (x: GameListener) => void, turn: number) {
-  let store: Store<State>
-  subscribe(game => {
-    if (!store) {
-      store = initializeRender(game, turn)
-    } else {
-      store.dispatch(setGame(game))
-    }
-  })
+    let store: Store<State>
+    subscribe(game => {
+        if (!store) {
+            store = initializeRender(game, turn)
+        } else {
+            store.dispatch(setGame(game))
+        }
+    })
 }
 
 function initializeRender(game: Game, turn: number) {
-  let store = createStore<State>(
-    reducers,
-    { game, turn, turnsRead: game.maxTurn }
-  )
-  ReactDOM.render(
-    <App store={store} />,
-    document.getElementById("main")
-  )
-  return store
+    let store = createStore<State>(
+        reducers,
+        { game, turn, turnsRead: game.maxTurn }
+    )
+    ReactDOM.render(
+        <App store={store} />,
+        document.getElementById("main")
+    )
+    return store
 }
 
 const SampleComponent = () => (
-  <RaisedButton label="Default" />
+    <RaisedButton label="Default" />
 )
 // const style = {
 //   height: 100,
